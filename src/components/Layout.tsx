@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import {
   BarChart3,
+  BookMarked,
   Database,
   GraduationCap,
   Home,
@@ -17,6 +18,7 @@ const NAV = [
   { to: '/', label: 'ホーム', icon: Home, end: true },
   { to: '/setup', label: '出題', icon: GraduationCap },
   { to: '/review', label: '復習', icon: RefreshCcw },
+  { to: '/glossary', label: '解説', icon: BookMarked },
   { to: '/stats', label: '成績', icon: BarChart3 },
   { to: '/questions', label: '問題管理', icon: Database },
   { to: '/generate', label: 'AI生成', icon: Sparkles },

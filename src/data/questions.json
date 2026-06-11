@@ -598,5 +598,1945 @@
     "imageUrl": null,
     "source": "オリジナル",
     "origin": "builtin"
+  },
+  {
+    "id": "ds-0011",
+    "category": "データサイエンス力",
+    "subCategory": "統計数理基礎",
+    "type": "single",
+    "difficulty": 1,
+    "question": "相関係数（ピアソンの積率相関係数）が取りうる値の範囲として正しいものはどれか。",
+    "choices": [
+      { "key": "a", "text": "0 以上 1 以下" },
+      { "key": "b", "text": "-1 以上 1 以下" },
+      { "key": "c", "text": "-∞ から +∞ まで" },
+      { "key": "d", "text": "0 以上 100 以下" }
+    ],
+    "answer": ["b"],
+    "explanation": "相関係数は -1〜+1 の範囲をとる。+1 は完全な正の直線関係、-1 は完全な負の直線関係、0 は直線的な相関がないことを示す。範囲が決まっている点が共分散との大きな違い。",
+    "tags": ["相関係数", "範囲"],
+    "imageUrl": null,
+    "source": "オリジナル",
+    "origin": "builtin"
+  },
+  {
+    "id": "ds-0012",
+    "category": "データサイエンス力",
+    "subCategory": "統計数理基礎",
+    "type": "single",
+    "difficulty": 2,
+    "question": "データを「標準化（z得点への変換）」した後の平均と標準偏差として正しいものはどれか。",
+    "choices": [
+      { "key": "a", "text": "平均0・標準偏差1" },
+      { "key": "b", "text": "平均1・標準偏差0" },
+      { "key": "c", "text": "平均50・標準偏差10" },
+      { "key": "d", "text": "平均0・標準偏差0" }
+    ],
+    "answer": ["a"],
+    "explanation": "標準化は (値 − 平均) ÷ 標準偏差 で計算し、変換後は平均0・標準偏差1になる。単位の異なる変数を比較可能にできる。平均50・標準偏差10は偏差値の定義。",
+    "tags": ["標準化", "zスコア", "偏差値"],
+    "imageUrl": null,
+    "source": "オリジナル",
+    "origin": "builtin"
+  },
+  {
+    "id": "ds-0013",
+    "category": "データサイエンス力",
+    "subCategory": "統計数理基礎",
+    "type": "single",
+    "difficulty": 3,
+    "question": "「中心極限定理」の説明として最も適切なものはどれか。",
+    "choices": [
+      { "key": "a", "text": "母集団の分布によらず、標本平均の分布は標本サイズが大きくなると正規分布に近づく" },
+      { "key": "b", "text": "データを多く集めるほど母平均は必ず0に近づく" },
+      { "key": "c", "text": "どんなデータも標準化すれば母集団自体が正規分布になる" },
+      { "key": "d", "text": "標本サイズに関係なく標本平均は常に一定になる" }
+    ],
+    "answer": ["a"],
+    "explanation": "中心極限定理は、元の母集団分布の形によらず、標本平均（の標本分布）が標本サイズの増加に伴い正規分布に近づくことを示す。区間推定や検定の理論的な土台となる。",
+    "tags": ["中心極限定理", "標本平均"],
+    "imageUrl": null,
+    "source": "オリジナル",
+    "origin": "builtin"
+  },
+  {
+    "id": "ds-0014",
+    "category": "データサイエンス力",
+    "subCategory": "統計数理基礎",
+    "type": "single",
+    "difficulty": 2,
+    "question": "共分散と相関係数の関係について最も適切な説明はどれか。",
+    "choices": [
+      { "key": "a", "text": "相関係数は共分散を両変数の標準偏差の積で割って基準化したものである" },
+      { "key": "b", "text": "共分散と相関係数は常に同じ値になる" },
+      { "key": "c", "text": "共分散は必ず -1〜1 の範囲に収まる" },
+      { "key": "d", "text": "相関係数は単位に依存して値が変わる" }
+    ],
+    "answer": ["a"],
+    "explanation": "相関係数 = 共分散 ÷（各変数の標準偏差の積）。共分散は単位に依存し範囲も定まらないが、相関係数は基準化されて -1〜1 に収まり単位に依存しない。",
+    "tags": ["共分散", "相関係数"],
+    "imageUrl": null,
+    "source": "オリジナル",
+    "origin": "builtin"
+  },
+  {
+    "id": "ds-0015",
+    "category": "データサイエンス力",
+    "subCategory": "記述統計",
+    "type": "single",
+    "difficulty": 2,
+    "question": "箱ひげ図（ボックスプロット）から直接読み取れないものはどれか。",
+    "choices": [
+      { "key": "a", "text": "中央値（第2四分位数）" },
+      { "key": "b", "text": "四分位範囲（IQR）" },
+      { "key": "c", "text": "平均値" },
+      { "key": "d", "text": "外れ値の有無" }
+    ],
+    "answer": ["c"],
+    "explanation": "箱ひげ図は最小値・第1四分位・中央値・第3四分位・最大値（と外れ値）を示すが、平均値は通常描かれない。平均は別途計算が必要。中央値と平均を混同しないこと。",
+    "tags": ["箱ひげ図", "四分位数"],
+    "imageUrl": null,
+    "source": "オリジナル",
+    "origin": "builtin"
+  },
+  {
+    "id": "ds-0016",
+    "category": "データサイエンス力",
+    "subCategory": "記述統計",
+    "type": "single",
+    "difficulty": 3,
+    "question": "平均値に対するばらつきの相対的な大きさを表し、単位の異なるデータ間でばらつきを比較するのに適した指標はどれか。",
+    "choices": [
+      { "key": "a", "text": "分散" },
+      { "key": "b", "text": "標準偏差" },
+      { "key": "c", "text": "変動係数（CV）" },
+      { "key": "d", "text": "範囲" }
+    ],
+    "answer": ["c"],
+    "explanation": "変動係数（CV）= 標準偏差 ÷ 平均値 で、単位に依存しない相対的なばらつきの指標。平均の大きさが異なる集団どうしのばらつきを比較する際に有用。",
+    "tags": ["変動係数", "ばらつき"],
+    "imageUrl": null,
+    "source": "オリジナル",
+    "origin": "builtin"
+  },
+  {
+    "id": "ds-0017",
+    "category": "データサイエンス力",
+    "subCategory": "記述統計",
+    "type": "single",
+    "difficulty": 2,
+    "question": "「気温（摂氏）」のように、目盛りの間隔は等しいが原点（0）が絶対的でなく比に意味がない尺度はどれか。",
+    "choices": [
+      { "key": "a", "text": "名義尺度" },
+      { "key": "b", "text": "順序尺度" },
+      { "key": "c", "text": "間隔尺度" },
+      { "key": "d", "text": "比例尺度" }
+    ],
+    "answer": ["c"],
+    "explanation": "摂氏温度は間隔尺度。差には意味があるが「20℃は10℃の2倍暑い」とは言えない（0℃が絶対零度でないため）。絶対原点を持ち比に意味があるのは比例尺度（重量・長さ等）。",
+    "tags": ["尺度水準", "間隔尺度"],
+    "imageUrl": null,
+    "source": "オリジナル",
+    "origin": "builtin"
+  },
+  {
+    "id": "ds-0018",
+    "category": "データサイエンス力",
+    "subCategory": "確率分布",
+    "type": "single",
+    "difficulty": 3,
+    "question": "ある病気の有病率は1%。検査の感度（病気の人を陽性と判定する確率）は90%、偽陽性率（健康な人を誤って陽性とする確率）は10%とする。検査陽性の人が実際に病気である確率に最も近いものはどれか。",
+    "choices": [
+      { "key": "a", "text": "約90%" },
+      { "key": "b", "text": "約50%" },
+      { "key": "c", "text": "約8%" },
+      { "key": "d", "text": "約1%" }
+    ],
+    "answer": ["c"],
+    "explanation": "ベイズの定理より、陽性的中率 = (0.01×0.9) ÷ (0.01×0.9 + 0.99×0.1) = 0.009 ÷ 0.108 ≒ 0.083（約8%）。有病率が低いと感度が高くても陽性的中率は低くなる典型例。",
+    "tags": ["ベイズの定理", "条件付き確率"],
+    "imageUrl": null,
+    "source": "オリジナル",
+    "origin": "builtin"
+  },
+  {
+    "id": "ds-0019",
+    "category": "データサイエンス力",
+    "subCategory": "確率分布",
+    "type": "single",
+    "difficulty": 2,
+    "question": "成功確率0.2の試行を独立に10回繰り返すとき、成功回数が従う分布と期待値の組み合わせとして正しいものはどれか。",
+    "choices": [
+      { "key": "a", "text": "二項分布・期待値2" },
+      { "key": "b", "text": "ポアソン分布・期待値0.2" },
+      { "key": "c", "text": "正規分布・期待値10" },
+      { "key": "d", "text": "一様分布・期待値5" }
+    ],
+    "answer": ["a"],
+    "explanation": "成功/失敗の独立試行を n 回繰り返したときの成功回数は二項分布に従い、期待値は n×p = 10×0.2 = 2。",
+    "tags": ["二項分布", "期待値"],
+    "imageUrl": null,
+    "source": "オリジナル",
+    "origin": "builtin"
+  },
+  {
+    "id": "ds-0020",
+    "category": "データサイエンス力",
+    "subCategory": "確率分布",
+    "type": "single",
+    "difficulty": 2,
+    "question": "「単位時間あたり平均してまれに起こる事象の発生回数」をモデル化するのに適した分布はどれか。",
+    "choices": [
+      { "key": "a", "text": "正規分布" },
+      { "key": "b", "text": "ポアソン分布" },
+      { "key": "c", "text": "一様分布" },
+      { "key": "d", "text": "指数分布" }
+    ],
+    "answer": ["b"],
+    "explanation": "ポアソン分布は、一定時間・空間で平均的にまれに発生する事象の回数（例: 1時間あたりの問い合わせ件数）を表す離散分布。なお事象の発生間隔は指数分布で表される。",
+    "tags": ["ポアソン分布", "離散分布"],
+    "imageUrl": null,
+    "source": "オリジナル",
+    "origin": "builtin"
+  },
+  {
+    "id": "ds-0021",
+    "category": "データサイエンス力",
+    "subCategory": "統計的検定",
+    "type": "single",
+    "difficulty": 3,
+    "question": "仮説検定における「第一種の過誤（タイプIエラー）」の説明として正しいものはどれか。",
+    "choices": [
+      { "key": "a", "text": "帰無仮説が正しいのに棄却してしまう誤り" },
+      { "key": "b", "text": "帰無仮説が誤っているのに棄却しない誤り" },
+      { "key": "c", "text": "対立仮説を立て忘れる誤り" },
+      { "key": "d", "text": "サンプルサイズを誤って計算する誤り" }
+    ],
+    "answer": ["a"],
+    "explanation": "第一種の過誤は「正しい帰無仮説を誤って棄却する（あわてんぼうの誤り）」で、確率は有意水準αに対応。第二種の過誤は「誤った帰無仮説を棄却できない（ぼんやりの誤り）」で確率はβ。",
+    "tags": ["第一種の過誤", "第二種の過誤"],
+    "imageUrl": null,
+    "source": "オリジナル",
+    "origin": "builtin"
+  },
+  {
+    "id": "ds-0022",
+    "category": "データサイエンス力",
+    "subCategory": "統計的検定",
+    "type": "single",
+    "difficulty": 2,
+    "question": "「新施策で平均購入額が変わったか」を検定したい。帰無仮説（H0）の置き方として一般に適切なものはどれか。",
+    "choices": [
+      { "key": "a", "text": "「平均購入額に差がある」" },
+      { "key": "b", "text": "「平均購入額に差がない」" },
+      { "key": "c", "text": "「施策は成功である」" },
+      { "key": "d", "text": "「サンプルが正規分布に従う」" }
+    ],
+    "answer": ["b"],
+    "explanation": "帰無仮説は通常「差がない・効果がない」という否定形で立て、それを棄却できるかを調べる。示したい主張（差がある）は対立仮説に置く。",
+    "tags": ["帰無仮説", "対立仮説"],
+    "imageUrl": null,
+    "source": "オリジナル",
+    "origin": "builtin"
+  },
+  {
+    "id": "ds-0023",
+    "category": "データサイエンス力",
+    "subCategory": "統計的検定",
+    "type": "single",
+    "difficulty": 3,
+    "question": "「母平均の95%信頼区間が [48, 52] であった」の解釈として最も適切なものはどれか。",
+    "choices": [
+      { "key": "a", "text": "母平均がこの区間に入る確率がちょうど95%である" },
+      { "key": "b", "text": "同じ方法で多数回区間推定すれば、そのうち約95%の区間が母平均を含む" },
+      { "key": "c", "text": "データの95%がこの区間に含まれる" },
+      { "key": "d", "text": "標本平均が95%の確率で48〜52になる" }
+    ],
+    "answer": ["b"],
+    "explanation": "信頼区間は「同じ手順を繰り返したとき、作られる区間の約95%が母平均を含む」という頻度論的な意味。固定された1つの区間に母平均が入る確率を95%と述べるのは厳密には誤り。",
+    "tags": ["信頼区間", "区間推定"],
+    "imageUrl": null,
+    "source": "オリジナル",
+    "origin": "builtin"
+  },
+  {
+    "id": "ds-0024",
+    "category": "データサイエンス力",
+    "subCategory": "統計的検定",
+    "type": "single",
+    "difficulty": 2,
+    "question": "カテゴリ変数どうし（例: 性別と購入有無）に関連があるかを調べる検定として適切なものはどれか。",
+    "choices": [
+      { "key": "a", "text": "t検定" },
+      { "key": "b", "text": "カイ二乗検定（独立性の検定）" },
+      { "key": "c", "text": "回帰分析" },
+      { "key": "d", "text": "分散分析（ANOVA）" }
+    ],
+    "answer": ["b"],
+    "explanation": "クロス集計表で2つのカテゴリ変数の関連（独立性）を調べるにはカイ二乗検定を用いる。t検定や分散分析は平均値の差（量的変数）の比較に使う。",
+    "tags": ["カイ二乗検定", "独立性"],
+    "imageUrl": null,
+    "source": "オリジナル",
+    "origin": "builtin"
+  },
+  {
+    "id": "ds-0025",
+    "category": "データサイエンス力",
+    "subCategory": "回帰分析",
+    "type": "single",
+    "difficulty": 2,
+    "question": "回帰モデルの「決定係数（R²）」の説明として最も適切なものはどれか。",
+    "choices": [
+      { "key": "a", "text": "目的変数の変動のうち、モデルで説明できる割合（0〜1）を表す" },
+      { "key": "b", "text": "回帰係数の符号を表す" },
+      { "key": "c", "text": "値が小さいほど当てはまりがよい" },
+      { "key": "d", "text": "常に1を超える" }
+    ],
+    "answer": ["a"],
+    "explanation": "決定係数R²は、目的変数の全変動のうち回帰モデルで説明できる割合で、通常0〜1。1に近いほど当てはまりがよい。ただし変数を増やすほど上がる性質があり、自由度調整済みR²で補正する。",
+    "tags": ["決定係数", "回帰分析"],
+    "imageUrl": null,
+    "source": "オリジナル",
+    "origin": "builtin"
+  },
+  {
+    "id": "ds-0026",
+    "category": "データサイエンス力",
+    "subCategory": "回帰分析",
+    "type": "single",
+    "difficulty": 2,
+    "question": "単回帰・重回帰で広く使われる、残差（実測値と予測値の差）の二乗和を最小化してパラメータを求める方法はどれか。",
+    "choices": [
+      { "key": "a", "text": "最小二乗法" },
+      { "key": "b", "text": "主成分分析" },
+      { "key": "c", "text": "クラスタリング" },
+      { "key": "d", "text": "ブートストラップ法" }
+    ],
+    "answer": ["a"],
+    "explanation": "最小二乗法は残差の二乗和を最小にするように回帰係数を推定する手法。外れ値の影響を受けやすい点に注意が必要。",
+    "tags": ["最小二乗法", "残差"],
+    "imageUrl": null,
+    "source": "オリジナル",
+    "origin": "builtin"
+  },
+  {
+    "id": "ds-0027",
+    "category": "データサイエンス力",
+    "subCategory": "回帰分析",
+    "type": "single",
+    "difficulty": 3,
+    "question": "重回帰分析で説明変数どうしの相関が非常に強いときに起こりやすい問題はどれか。",
+    "choices": [
+      { "key": "a", "text": "多重共線性により回帰係数が不安定になる" },
+      { "key": "b", "text": "決定係数が必ず0になる" },
+      { "key": "c", "text": "目的変数が消失する" },
+      { "key": "d", "text": "残差が必ず正規分布になる" }
+    ],
+    "answer": ["a"],
+    "explanation": "説明変数間に強い相関があると多重共線性が生じ、回帰係数の推定が不安定になり符号が直感と反することもある。VIF（分散拡大係数）で診断し、変数の削除などで対処する。",
+    "tags": ["多重共線性", "VIF"],
+    "imageUrl": null,
+    "source": "オリジナル",
+    "origin": "builtin"
+  },
+  {
+    "id": "ds-0028",
+    "category": "データサイエンス力",
+    "subCategory": "機械学習基礎",
+    "type": "multiple",
+    "difficulty": 2,
+    "question": "「強化学習」に関する説明として適切なものをすべて選べ。",
+    "choices": [
+      { "key": "a", "text": "エージェントが試行錯誤し、報酬を最大化する行動方針を学習する" },
+      { "key": "b", "text": "正解ラベル付きデータから入出力の対応を学習する" },
+      { "key": "c", "text": "ゲームAIやロボット制御などに応用される" },
+      { "key": "d", "text": "正解ラベルを使わずデータの構造（クラスタ等）を見つける" }
+    ],
+    "answer": ["a", "c"],
+    "explanation": "強化学習は、環境との相互作用で得る報酬を最大化する方策を試行錯誤で学ぶ枠組み（ゲームAI・ロボット等）。bは教師あり学習、dは教師なし学習の説明。",
+    "tags": ["強化学習", "機械学習の分類"],
+    "imageUrl": null,
+    "source": "オリジナル",
+    "origin": "builtin"
+  },
+  {
+    "id": "ds-0029",
+    "category": "データサイエンス力",
+    "subCategory": "機械学習基礎",
+    "type": "single",
+    "difficulty": 1,
+    "question": "「分類」と「回帰」の違いの説明として最も適切なものはどれか。",
+    "choices": [
+      { "key": "a", "text": "分類は連続値を、回帰はカテゴリを予測する" },
+      { "key": "b", "text": "分類はカテゴリ（離散値）を、回帰は連続値（数値）を予測する" },
+      { "key": "c", "text": "分類も回帰も教師なし学習である" },
+      { "key": "d", "text": "両者に違いはない" }
+    ],
+    "answer": ["b"],
+    "explanation": "分類は「迷惑メールか否か」のようにカテゴリ（離散値）を、回帰は「明日の売上」のように連続値を予測する。どちらも教師あり学習に分類される。",
+    "tags": ["分類", "回帰"],
+    "imageUrl": null,
+    "source": "オリジナル",
+    "origin": "builtin"
+  },
+  {
+    "id": "ds-0030",
+    "category": "データサイエンス力",
+    "subCategory": "機械学習基礎",
+    "type": "single",
+    "difficulty": 2,
+    "question": "k分割交差検証（k-fold cross-validation）の主な目的として最も適切なものはどれか。",
+    "choices": [
+      { "key": "a", "text": "データを増やして学習を高速化する" },
+      { "key": "b", "text": "限られたデータを有効活用し、モデルの汎化性能を安定して評価する" },
+      { "key": "c", "text": "正解ラベルを自動で付与する" },
+      { "key": "d", "text": "必ず過学習をなくす" }
+    ],
+    "answer": ["b"],
+    "explanation": "k分割交差検証はデータをk個に分け、各分割を順にテスト用として評価を繰り返し平均する。1回のホールドアウトより評価が安定し、限られたデータを有効に使える。",
+    "tags": ["交差検証", "汎化性能"],
+    "imageUrl": null,
+    "source": "オリジナル",
+    "origin": "builtin"
+  },
+  {
+    "id": "ds-0031",
+    "category": "データサイエンス力",
+    "subCategory": "機械学習基礎",
+    "type": "single",
+    "difficulty": 2,
+    "question": "モデル開発でデータを「学習用・検証用・テスト用」に分ける理由として最も適切なものはどれか。",
+    "choices": [
+      { "key": "a", "text": "未知データに対する性能を公平に評価し、過学習や情報リークを防ぐため" },
+      { "key": "b", "text": "学習時間を必ず短縮するため" },
+      { "key": "c", "text": "データ量を水増しするため" },
+      { "key": "d", "text": "正解率を意図的に高く見せるため" }
+    ],
+    "answer": ["a"],
+    "explanation": "ハイパーパラメータ調整は検証データで行い、最終評価は一度も学習に使っていないテストデータで実施する。テストデータを学習や調整に使うと評価が甘くなる（情報リーク）。",
+    "tags": ["データ分割", "情報リーク"],
+    "imageUrl": null,
+    "source": "オリジナル",
+    "origin": "builtin"
+  },
+  {
+    "id": "ds-0032",
+    "category": "データサイエンス力",
+    "subCategory": "機械学習基礎",
+    "type": "single",
+    "difficulty": 2,
+    "question": "主成分分析（PCA）の主な用途として最も適切なものはどれか。",
+    "choices": [
+      { "key": "a", "text": "欠損値を補完する" },
+      { "key": "b", "text": "情報をできるだけ保ちつつ変数を少数の合成変数に圧縮する（次元削減）" },
+      { "key": "c", "text": "正解ラベルを予測する" },
+      { "key": "d", "text": "データを暗号化する" }
+    ],
+    "answer": ["b"],
+    "explanation": "主成分分析は相関のある多数の変数を、分散（情報量）を最大化する少数の主成分に集約する次元削減手法。可視化や多重共線性の緩和、計算量削減に使われる教師なし手法。",
+    "tags": ["主成分分析", "次元削減"],
+    "imageUrl": null,
+    "source": "オリジナル",
+    "origin": "builtin"
+  },
+  {
+    "id": "ds-0033",
+    "category": "データサイエンス力",
+    "subCategory": "機械学習基礎",
+    "type": "single",
+    "difficulty": 3,
+    "question": "機械学習における「正則化（regularization）」の目的として最も適切なものはどれか。",
+    "choices": [
+      { "key": "a", "text": "モデルの複雑さに罰則を与え、過学習を抑えて汎化性能を高める" },
+      { "key": "b", "text": "学習データを増やす" },
+      { "key": "c", "text": "正解率を強制的に100%にする" },
+      { "key": "d", "text": "特徴量を必ずすべて使わせる" }
+    ],
+    "answer": ["a"],
+    "explanation": "正則化は損失関数に係数の大きさへの罰則項を加え、モデルが複雑になりすぎる（過学習する）のを抑える。L1正則化（ラッソ）は不要な係数を0にして変数選択効果を持つ。",
+    "tags": ["正則化", "L1", "L2"],
+    "imageUrl": null,
+    "source": "オリジナル",
+    "origin": "builtin"
+  },
+  {
+    "id": "ds-0034",
+    "category": "データサイエンス力",
+    "subCategory": "機械学習基礎",
+    "type": "single",
+    "difficulty": 2,
+    "question": "複数の決定木を組み合わせ、多数決や平均で予測精度と安定性を高める手法はどれか。",
+    "choices": [
+      { "key": "a", "text": "ランダムフォレスト" },
+      { "key": "b", "text": "単回帰分析" },
+      { "key": "c", "text": "k-meansクラスタリング" },
+      { "key": "d", "text": "主成分分析" }
+    ],
+    "answer": ["a"],
+    "explanation": "ランダムフォレストは多数の決定木を集めるアンサンブル学習（バギング）の一種で、単一の木より過学習しにくく安定する。複数モデルを組み合わせる考え方をアンサンブル学習と呼ぶ。",
+    "tags": ["ランダムフォレスト", "アンサンブル学習"],
+    "imageUrl": null,
+    "source": "オリジナル",
+    "origin": "builtin"
+  },
+  {
+    "id": "ds-0035",
+    "category": "データサイエンス力",
+    "subCategory": "機械学習基礎",
+    "type": "single",
+    "difficulty": 2,
+    "question": "k近傍法（k-NN）の説明として最も適切なものはどれか。",
+    "choices": [
+      { "key": "a", "text": "予測したい点の近くにある k 個の学習データの多数決・平均で予測する" },
+      { "key": "b", "text": "データを k 個のクラスタに分割する教師なし手法である" },
+      { "key": "c", "text": "必ず線形の境界しか引けない" },
+      { "key": "d", "text": "学習時に複雑な最適化計算が必要である" }
+    ],
+    "answer": ["a"],
+    "explanation": "k-NNは新しいデータに近い k 個の既知データを参照し、分類なら多数決、回帰なら平均で予測する教師あり手法。kの値が結果に影響する。bのk個に分割は k-means（教師なし）で混同しやすい。",
+    "tags": ["k近傍法", "kNN"],
+    "imageUrl": null,
+    "source": "オリジナル",
+    "origin": "builtin"
+  },
+  {
+    "id": "ds-0036",
+    "category": "データサイエンス力",
+    "subCategory": "機械学習基礎",
+    "type": "single",
+    "difficulty": 3,
+    "question": "勾配降下法における「学習率（learning rate）」が大きすぎる場合に起こりやすい現象はどれか。",
+    "choices": [
+      { "key": "a", "text": "更新の幅が大きすぎて損失が収束せず発散・振動しやすい" },
+      { "key": "b", "text": "必ず最速で最適解に到達する" },
+      { "key": "c", "text": "学習がまったく進まなくなる" },
+      { "key": "d", "text": "過学習が必ず解消する" }
+    ],
+    "answer": ["a"],
+    "explanation": "学習率が大きすぎると最小点を飛び越えて損失が発散・振動しやすく、小さすぎると収束が遅くなる。適切な学習率の設定が重要なハイパーパラメータ調整となる。",
+    "tags": ["勾配降下法", "学習率"],
+    "imageUrl": null,
+    "source": "オリジナル",
+    "origin": "builtin"
+  },
+  {
+    "id": "ds-0037",
+    "category": "データサイエンス力",
+    "subCategory": "機械学習基礎",
+    "type": "single",
+    "difficulty": 2,
+    "question": "「ハイパーパラメータ」と「パラメータ」の違いの説明として最も適切なものはどれか。",
+    "choices": [
+      { "key": "a", "text": "ハイパーパラメータは学習前に人が設定する値、パラメータは学習で自動的に決まる値" },
+      { "key": "b", "text": "両者は同じものを指す" },
+      { "key": "c", "text": "ハイパーパラメータは学習で自動的に決まる値である" },
+      { "key": "d", "text": "パラメータは必ず人が手で設定する" }
+    ],
+    "answer": ["a"],
+    "explanation": "回帰係数や重みのように学習で最適化される値がパラメータ。木の深さ・学習率・kの値などモデル構造や学習を制御するために事前に与える値がハイパーパラメータ。",
+    "tags": ["ハイパーパラメータ", "パラメータ"],
+    "imageUrl": null,
+    "source": "オリジナル",
+    "origin": "builtin"
+  },
+  {
+    "id": "ds-0038",
+    "category": "データサイエンス力",
+    "subCategory": "機械学習評価",
+    "type": "single",
+    "difficulty": 2,
+    "question": "適合率（Precision）の定義として正しいものはどれか。",
+    "choices": [
+      { "key": "a", "text": "陽性と予測したもののうち、実際に陽性だった割合" },
+      { "key": "b", "text": "実際に陽性のもののうち、陽性と予測できた割合" },
+      { "key": "c", "text": "全体のうち正しく分類できた割合" },
+      { "key": "d", "text": "陰性を陰性と予測できた割合" }
+    ],
+    "answer": ["a"],
+    "explanation": "適合率（Precision）= TP /（TP + FP）。陽性と予測したものの正確さを表す。bは再現率（Recall）、cは正解率（Accuracy）。誤検知を減らしたい場面で適合率を重視する。",
+    "tags": ["適合率", "混同行列"],
+    "imageUrl": null,
+    "source": "オリジナル",
+    "origin": "builtin"
+  },
+  {
+    "id": "ds-0039",
+    "category": "データサイエンス力",
+    "subCategory": "機械学習評価",
+    "type": "single",
+    "difficulty": 3,
+    "question": "F1スコアの説明として最も適切なものはどれか。",
+    "choices": [
+      { "key": "a", "text": "適合率と再現率の調和平均で、両者のバランスを見る指標" },
+      { "key": "b", "text": "正解率と同じ意味である" },
+      { "key": "c", "text": "適合率と再現率の単純な和である" },
+      { "key": "d", "text": "常に正解率より大きくなる" }
+    ],
+    "answer": ["a"],
+    "explanation": "F1スコアは適合率と再現率の調和平均。どちらか一方だけ高くても値が伸びないため、適合率と再現率がトレードオフの関係にある不均衡データで両者のバランス評価に使われる。",
+    "tags": ["F1スコア", "調和平均"],
+    "imageUrl": null,
+    "source": "オリジナル",
+    "origin": "builtin"
+  },
+  {
+    "id": "ds-0040",
+    "category": "データサイエンス力",
+    "subCategory": "機械学習評価",
+    "type": "single",
+    "difficulty": 3,
+    "question": "ROC曲線とAUCに関する説明として最も適切なものはどれか。",
+    "choices": [
+      { "key": "a", "text": "AUCは1に近いほど分類性能が高く、0.5はランダム予測と同等を意味する" },
+      { "key": "b", "text": "AUCは0に近いほど性能が高い" },
+      { "key": "c", "text": "ROC曲線は回帰モデルの残差を表す" },
+      { "key": "d", "text": "AUCは必ず正解率と一致する" }
+    ],
+    "answer": ["a"],
+    "explanation": "ROC曲線は閾値を変えたときの真陽性率と偽陽性率の関係を描き、その下の面積がAUC。AUCは0.5でランダム、1に近いほど良い。閾値に依存せず2値分類性能を総合評価できる。",
+    "tags": ["ROC曲線", "AUC"],
+    "imageUrl": null,
+    "source": "オリジナル",
+    "origin": "builtin"
+  },
+  {
+    "id": "ds-0041",
+    "category": "データサイエンス力",
+    "subCategory": "機械学習評価",
+    "type": "single",
+    "difficulty": 3,
+    "question": "陽性が全体の1%しかない不均衡データで「正解率（Accuracy）99%」のモデルができた。注意点として最も適切なものはどれか。",
+    "choices": [
+      { "key": "a", "text": "常に「陰性」と予測するだけでも正解率99%になり得るため、再現率などで評価すべき" },
+      { "key": "b", "text": "正解率99%なので無条件に優秀なモデルといえる" },
+      { "key": "c", "text": "不均衡データでは正解率が最も信頼できる指標である" },
+      { "key": "d", "text": "陽性が少ないほど正解率は低くなる" }
+    ],
+    "answer": ["a"],
+    "explanation": "不均衡データでは多数派を答え続けるだけで高い正解率が出てしまう。陽性をどれだけ拾えたか（再現率）や適合率、F1スコア、AUCなどで評価する必要がある。",
+    "tags": ["不均衡データ", "正解率の落とし穴"],
+    "imageUrl": null,
+    "source": "オリジナル",
+    "origin": "builtin"
+  },
+  {
+    "id": "ds-0042",
+    "category": "データサイエンス力",
+    "subCategory": "機械学習評価",
+    "type": "multiple",
+    "difficulty": 2,
+    "question": "回帰モデルの評価指標として用いられるものをすべて選べ。",
+    "choices": [
+      { "key": "a", "text": "RMSE（二乗平均平方根誤差）" },
+      { "key": "b", "text": "MAE（平均絶対誤差）" },
+      { "key": "c", "text": "適合率（Precision）" },
+      { "key": "d", "text": "決定係数（R²）" }
+    ],
+    "answer": ["a", "b", "d"],
+    "explanation": "RMSE・MAE・R²は回帰の評価指標。RMSEは大きな誤差を強く罰し、MAEは外れ値に比較的頑健。適合率は分類の指標で回帰には用いない。",
+    "tags": ["RMSE", "MAE", "回帰評価"],
+    "imageUrl": null,
+    "source": "オリジナル",
+    "origin": "builtin"
+  },
+  {
+    "id": "ds-0043",
+    "category": "データサイエンス力",
+    "subCategory": "機械学習評価",
+    "type": "single",
+    "difficulty": 3,
+    "question": "「バイアス・バリアンスのトレードオフ」に関する説明として最も適切なものはどれか。",
+    "choices": [
+      { "key": "a", "text": "モデルが単純すぎると高バイアス（未学習）、複雑すぎると高バリアンス（過学習）になりやすい" },
+      { "key": "b", "text": "バイアスとバリアンスは同時にいくらでも下げられる" },
+      { "key": "c", "text": "バリアンスが高いほど常に良いモデルである" },
+      { "key": "d", "text": "バイアスは学習データの偏りだけを指す" }
+    ],
+    "answer": ["a"],
+    "explanation": "モデルが単純すぎると偏り（バイアス）が大きく未学習、複雑すぎると分散（バリアンス）が大きく過学習になる。両者はトレードオフの関係にあり、適切な複雑さの選択が重要。",
+    "tags": ["バイアス", "バリアンス", "過学習"],
+    "imageUrl": null,
+    "source": "オリジナル",
+    "origin": "builtin"
+  },
+  {
+    "id": "ds-0044",
+    "category": "データサイエンス力",
+    "subCategory": "可視化",
+    "type": "single",
+    "difficulty": 1,
+    "question": "1つの量的変数の分布の形（山の位置やばらつき、偏り）を把握するのに最も適したグラフはどれか。",
+    "choices": [
+      { "key": "a", "text": "ヒストグラム" },
+      { "key": "b", "text": "円グラフ" },
+      { "key": "c", "text": "折れ線グラフ" },
+      { "key": "d", "text": "レーダーチャート" }
+    ],
+    "answer": ["a"],
+    "explanation": "ヒストグラムは連続値を区間（ビン）に区切り度数を棒で示し、分布の形・ばらつき・偏りを把握できる。折れ線は時系列の推移、円グラフは構成比に向く。",
+    "tags": ["ヒストグラム", "可視化"],
+    "imageUrl": null,
+    "source": "オリジナル",
+    "origin": "builtin"
+  },
+  {
+    "id": "ds-0045",
+    "category": "データサイエンス力",
+    "subCategory": "可視化",
+    "type": "single",
+    "difficulty": 2,
+    "question": "多数の変数間の相関係数を一覧で把握するのに適した可視化はどれか。",
+    "choices": [
+      { "key": "a", "text": "相関行列のヒートマップ" },
+      { "key": "b", "text": "円グラフ" },
+      { "key": "c", "text": "箱ひげ図" },
+      { "key": "d", "text": "ガントチャート" }
+    ],
+    "answer": ["a"],
+    "explanation": "相関行列を色の濃淡で表すヒートマップは、多変数間の相関の強弱を一目で把握できる。強い相関のペア（多重共線性の候補）を見つけるのにも有効。",
+    "tags": ["ヒートマップ", "相関行列"],
+    "imageUrl": null,
+    "source": "オリジナル",
+    "origin": "builtin"
+  },
+  {
+    "id": "de-0010",
+    "category": "データエンジニアリング力",
+    "subCategory": "SQL",
+    "type": "single",
+    "difficulty": 1,
+    "question": "テーブル users から age が20以上の行だけを取得するSQLとして正しいものはどれか。",
+    "choices": [
+      { "key": "a", "text": "SELECT * FROM users WHERE age >= 20" },
+      { "key": "b", "text": "SELECT * FROM users HAVING age >= 20" },
+      { "key": "c", "text": "SELECT * FROM users IF age >= 20" },
+      { "key": "d", "text": "SELECT * FROM users GROUP BY age >= 20" }
+    ],
+    "answer": ["a"],
+    "explanation": "行の絞り込み条件は WHERE 句で指定する。HAVING は GROUP BY による集計後の条件指定に使う。",
+    "tags": ["SQL", "WHERE"],
+    "imageUrl": null,
+    "source": "オリジナル",
+    "origin": "builtin"
+  },
+  {
+    "id": "de-0011",
+    "category": "データエンジニアリング力",
+    "subCategory": "SQL",
+    "type": "single",
+    "difficulty": 1,
+    "question": "取得結果を売上（amount）の降順（大きい順）に並べ替えるSQL句として正しいものはどれか。",
+    "choices": [
+      { "key": "a", "text": "ORDER BY amount ASC" },
+      { "key": "b", "text": "ORDER BY amount DESC" },
+      { "key": "c", "text": "SORT BY amount DOWN" },
+      { "key": "d", "text": "GROUP BY amount DESC" }
+    ],
+    "answer": ["b"],
+    "explanation": "並べ替えは ORDER BY。降順は DESC、昇順（小さい順）は ASC（省略時の既定）。",
+    "tags": ["SQL", "ORDER BY"],
+    "imageUrl": null,
+    "source": "オリジナル",
+    "origin": "builtin"
+  },
+  {
+    "id": "de-0012",
+    "category": "データエンジニアリング力",
+    "subCategory": "SQL",
+    "type": "single",
+    "difficulty": 2,
+    "question": "テーブル orders の customer_id について「重複を除いた顧客数」を求めるSQLとして正しいものはどれか。",
+    "choices": [
+      { "key": "a", "text": "SELECT COUNT(customer_id) FROM orders" },
+      { "key": "b", "text": "SELECT COUNT(DISTINCT customer_id) FROM orders" },
+      { "key": "c", "text": "SELECT DISTINCT COUNT(customer_id) FROM orders" },
+      { "key": "d", "text": "SELECT SUM(customer_id) FROM orders" }
+    ],
+    "answer": ["b"],
+    "explanation": "重複を除いた件数は COUNT(DISTINCT 列) で求める。COUNT(列) は重複も含めた件数になる点に注意。",
+    "tags": ["SQL", "DISTINCT", "COUNT"],
+    "imageUrl": null,
+    "source": "オリジナル",
+    "origin": "builtin"
+  },
+  {
+    "id": "de-0013",
+    "category": "データエンジニアリング力",
+    "subCategory": "SQL",
+    "type": "single",
+    "difficulty": 2,
+    "question": "SQLにおける NULL の扱いについて正しいものはどれか。",
+    "choices": [
+      { "key": "a", "text": "NULL かどうかは「= NULL」で判定できる" },
+      { "key": "b", "text": "NULL の判定には IS NULL / IS NOT NULL を使う" },
+      { "key": "c", "text": "COUNT(列名) は NULL も含めて数える" },
+      { "key": "d", "text": "NULL は数値の0と完全に同じ意味である" }
+    ],
+    "answer": ["b"],
+    "explanation": "NULLは「値が不明・未定義」を表し、= や <> では正しく判定できず IS NULL / IS NOT NULL を使う。COUNT(列名) はNULLを除いて数え、NULLは0や空文字とは異なる。",
+    "tags": ["SQL", "NULL"],
+    "imageUrl": null,
+    "source": "オリジナル",
+    "origin": "builtin"
+  },
+  {
+    "id": "de-0014",
+    "category": "データエンジニアリング力",
+    "subCategory": "SQL",
+    "type": "single",
+    "difficulty": 2,
+    "question": "左側テーブルの全行を残し、右側テーブルに対応がなければ NULL を補って結合する結合はどれか。",
+    "choices": [
+      { "key": "a", "text": "INNER JOIN" },
+      { "key": "b", "text": "LEFT OUTER JOIN" },
+      { "key": "c", "text": "CROSS JOIN" },
+      { "key": "d", "text": "SELF JOIN" }
+    ],
+    "answer": ["b"],
+    "explanation": "LEFT OUTER JOINは左テーブルの全行を保持し、右側に一致がない箇所はNULLになる。一致行のみ返すINNER JOINとの違いを押さえる。",
+    "tags": ["SQL", "JOIN", "LEFT JOIN"],
+    "imageUrl": null,
+    "source": "オリジナル",
+    "origin": "builtin"
+  },
+  {
+    "id": "de-0015",
+    "category": "データエンジニアリング力",
+    "subCategory": "データベース",
+    "type": "single",
+    "difficulty": 1,
+    "question": "リレーショナルDBで、各行を一意に識別するために設定する列（またはその組）はどれか。",
+    "choices": [
+      { "key": "a", "text": "主キー（プライマリキー）" },
+      { "key": "b", "text": "インデックス" },
+      { "key": "c", "text": "ビュー" },
+      { "key": "d", "text": "トリガー" }
+    ],
+    "answer": ["a"],
+    "explanation": "主キーは行を一意に識別する列で、重複やNULLは許されない。検索高速化のための補助構造がインデックス、保存された問い合わせ結果がビュー。",
+    "tags": ["主キー", "データベース"],
+    "imageUrl": null,
+    "source": "オリジナル",
+    "origin": "builtin"
+  },
+  {
+    "id": "de-0016",
+    "category": "データエンジニアリング力",
+    "subCategory": "データベース",
+    "type": "single",
+    "difficulty": 2,
+    "question": "別テーブルの主キーを参照し、テーブル間の関連と整合性（参照整合性）を保つために設定する列はどれか。",
+    "choices": [
+      { "key": "a", "text": "外部キー（フォーリンキー）" },
+      { "key": "b", "text": "主キー" },
+      { "key": "c", "text": "候補キー" },
+      { "key": "d", "text": "サロゲートキー" }
+    ],
+    "answer": ["a"],
+    "explanation": "外部キーは他テーブルの主キーを参照する列で、存在しない値の登録を防ぎ参照整合性を保つ。テーブル間のリレーションを表現する。",
+    "tags": ["外部キー", "参照整合性"],
+    "imageUrl": null,
+    "source": "オリジナル",
+    "origin": "builtin"
+  },
+  {
+    "id": "de-0017",
+    "category": "データエンジニアリング力",
+    "subCategory": "データベース",
+    "type": "single",
+    "difficulty": 3,
+    "question": "データベースのトランザクションが満たすべき性質「ACID」に含まれないものはどれか。",
+    "choices": [
+      { "key": "a", "text": "Atomicity（原子性）" },
+      { "key": "b", "text": "Consistency（一貫性）" },
+      { "key": "c", "text": "Availability（可用性）" },
+      { "key": "d", "text": "Durability（永続性）" }
+    ],
+    "answer": ["c"],
+    "explanation": "ACIDは Atomicity（原子性）・Consistency（一貫性）・Isolation（独立性）・Durability（永続性）。Availability（可用性）は分散システムのCAP定理に登場する語で混同しやすい。",
+    "tags": ["ACID", "トランザクション"],
+    "imageUrl": null,
+    "source": "オリジナル",
+    "origin": "builtin"
+  },
+  {
+    "id": "de-0018",
+    "category": "データエンジニアリング力",
+    "subCategory": "データベース",
+    "type": "single",
+    "difficulty": 2,
+    "question": "キーバリュー型・ドキュメント型など、固定的な表スキーマに縛られず大規模・多様なデータを柔軟に扱えるDBの総称はどれか。",
+    "choices": [
+      { "key": "a", "text": "NoSQL" },
+      { "key": "b", "text": "RDBMS" },
+      { "key": "c", "text": "OLAP" },
+      { "key": "d", "text": "CSV" }
+    ],
+    "answer": ["a"],
+    "explanation": "NoSQLはキーバリュー型・ドキュメント型・カラム指向・グラフ型などの総称で、スキーマの柔軟性や水平スケールに強い。厳密な整合性や複雑な結合はRDBMSが得意。",
+    "tags": ["NoSQL", "データベース"],
+    "imageUrl": null,
+    "source": "オリジナル",
+    "origin": "builtin"
+  },
+  {
+    "id": "de-0019",
+    "category": "データエンジニアリング力",
+    "subCategory": "データベース",
+    "type": "single",
+    "difficulty": 2,
+    "question": "データベースのインデックスに関する説明として最も適切なものはどれか。",
+    "choices": [
+      { "key": "a", "text": "検索を高速化できるが、更新・挿入のコストや記憶容量が増えることがある" },
+      { "key": "b", "text": "設定すれば必ずすべての処理が速くなる" },
+      { "key": "c", "text": "インデックスはデータの暗号化機能である" },
+      { "key": "d", "text": "インデックスを増やしても副作用は一切ない" }
+    ],
+    "answer": ["a"],
+    "explanation": "インデックスは検索（SELECT）を高速化する一方、データ更新時に索引の維持コストがかかり容量も消費する。むやみに増やすと書き込み性能が落ちるためトレードオフを考える。",
+    "tags": ["インデックス", "パフォーマンス"],
+    "imageUrl": null,
+    "source": "オリジナル",
+    "origin": "builtin"
+  },
+  {
+    "id": "de-0020",
+    "category": "データエンジニアリング力",
+    "subCategory": "データ形式",
+    "type": "single",
+    "difficulty": 1,
+    "question": "多言語の文字を扱え、Webや多くのシステムで標準的に使われる文字エンコーディングはどれか。",
+    "choices": [
+      { "key": "a", "text": "UTF-8" },
+      { "key": "b", "text": "BMP" },
+      { "key": "c", "text": "MP3" },
+      { "key": "d", "text": "PNG" }
+    ],
+    "answer": ["a"],
+    "explanation": "UTF-8はUnicodeを可変長で符号化する方式で、多言語対応・Web標準として広く使われる。異なる文字コードで読むと文字化けが起きるため、入出力時のエンコーディング統一が重要。",
+    "tags": ["文字コード", "UTF-8"],
+    "imageUrl": null,
+    "source": "オリジナル",
+    "origin": "builtin"
+  },
+  {
+    "id": "de-0021",
+    "category": "データエンジニアリング力",
+    "subCategory": "データ形式",
+    "type": "multiple",
+    "difficulty": 2,
+    "question": "CSVファイルを扱う際に注意すべき点として適切なものをすべて選べ。",
+    "choices": [
+      { "key": "a", "text": "値の中にカンマや改行が含まれる場合は引用符で囲むなどの処理が必要" },
+      { "key": "b", "text": "文字コードの違いにより文字化けが起こり得る" },
+      { "key": "c", "text": "階層的な入れ子構造を表現するのに最も適している" },
+      { "key": "d", "text": "先頭行をヘッダとするか否かを取り決めておく必要がある" }
+    ],
+    "answer": ["a", "b", "d"],
+    "explanation": "CSVは表形式（フラット）で、区切り文字・引用符・文字コード・ヘッダ有無の扱いに注意が必要。入れ子の階層構造の表現はJSONやXMLが適しており、CSVは不向き。",
+    "tags": ["CSV", "データ形式"],
+    "imageUrl": null,
+    "source": "オリジナル",
+    "origin": "builtin"
+  },
+  {
+    "id": "de-0022",
+    "category": "データエンジニアリング力",
+    "subCategory": "データ処理",
+    "type": "single",
+    "difficulty": 2,
+    "question": "「一定期間ためたデータをまとめて処理する方式」と「発生したデータを逐次・リアルタイムに処理する方式」の組み合わせとして正しいものはどれか。",
+    "choices": [
+      { "key": "a", "text": "バッチ処理 と ストリーム処理" },
+      { "key": "b", "text": "ストリーム処理 と バッチ処理" },
+      { "key": "c", "text": "バッチ処理 と トランザクション処理" },
+      { "key": "d", "text": "ETL と ELT" }
+    ],
+    "answer": ["a"],
+    "explanation": "まとめて処理するのがバッチ処理、データ発生のたびに逐次処理するのがストリーム（リアルタイム）処理。要件（鮮度・スループット）に応じて使い分ける。",
+    "tags": ["バッチ処理", "ストリーム処理"],
+    "imageUrl": null,
+    "source": "オリジナル",
+    "origin": "builtin"
+  },
+  {
+    "id": "de-0023",
+    "category": "データエンジニアリング力",
+    "subCategory": "データ処理",
+    "type": "single",
+    "difficulty": 2,
+    "question": "大量データを複数台のコンピュータに分散して並列処理する代表的な基盤・フレームワークはどれか。",
+    "choices": [
+      { "key": "a", "text": "Apache Hadoop / Apache Spark" },
+      { "key": "b", "text": "Microsoft Excel" },
+      { "key": "c", "text": "Adobe Photoshop" },
+      { "key": "d", "text": "PowerPoint" }
+    ],
+    "answer": ["a"],
+    "explanation": "HadoopやSparkは大規模データを多数のマシンで分散・並列処理する基盤。Hadoopの処理モデルとしてMapReduceが知られ、Sparkはインメモリ処理で高速。",
+    "tags": ["Hadoop", "Spark", "分散処理"],
+    "imageUrl": null,
+    "source": "オリジナル",
+    "origin": "builtin"
+  },
+  {
+    "id": "de-0024",
+    "category": "データエンジニアリング力",
+    "subCategory": "データ処理",
+    "type": "single",
+    "difficulty": 3,
+    "question": "「構造化済みで分析用に整理されたデータを蓄積する基盤」と「未加工データを含め多様な形式をそのまま大量に蓄積する基盤」の組み合わせとして正しいものはどれか。",
+    "choices": [
+      { "key": "a", "text": "データウェアハウス（DWH） と データレイク" },
+      { "key": "b", "text": "データレイク と データウェアハウス（DWH）" },
+      { "key": "c", "text": "データマート と OLTP" },
+      { "key": "d", "text": "ETL と ELT" }
+    ],
+    "answer": ["a"],
+    "explanation": "DWHは分析向けに整理・統合された構造化データの蓄積基盤、データレイクは構造化・非構造化を問わず生データを大量に貯める基盤。特定部門・用途向けに絞った小規模なものがデータマート。",
+    "tags": ["DWH", "データレイク", "データマート"],
+    "imageUrl": null,
+    "source": "オリジナル",
+    "origin": "builtin"
+  },
+  {
+    "id": "de-0025",
+    "category": "データエンジニアリング力",
+    "subCategory": "前処理",
+    "type": "single",
+    "difficulty": 2,
+    "question": "値を一律に「0〜1の範囲」に収めるスケーリング手法はどれか。",
+    "choices": [
+      { "key": "a", "text": "Min-Max正規化" },
+      { "key": "b", "text": "標準化（z変換）" },
+      { "key": "c", "text": "対数変換" },
+      { "key": "d", "text": "one-hotエンコーディング" }
+    ],
+    "answer": ["a"],
+    "explanation": "Min-Max正規化は (値 − 最小) ÷ (最大 − 最小) で0〜1に収める。標準化は平均0・分散1にする手法。両者を区別すること。外れ値があるとMin-Maxは影響を受けやすい。",
+    "tags": ["正規化", "Min-Max", "スケーリング"],
+    "imageUrl": null,
+    "source": "オリジナル",
+    "origin": "builtin"
+  },
+  {
+    "id": "de-0026",
+    "category": "データエンジニアリング力",
+    "subCategory": "前処理",
+    "type": "single",
+    "difficulty": 2,
+    "question": "「赤・青・緑」のような順序のないカテゴリ変数を、各カテゴリを0/1の列に展開して数値化する手法はどれか。",
+    "choices": [
+      { "key": "a", "text": "one-hotエンコーディング" },
+      { "key": "b", "text": "標準化" },
+      { "key": "c", "text": "主成分分析" },
+      { "key": "d", "text": "ビニング" }
+    ],
+    "answer": ["a"],
+    "explanation": "one-hotエンコーディングは各カテゴリを0/1のダミー変数列に変換する。順序のないカテゴリに単純な整数（1,2,3…）を割り当てると大小関係を誤って学習させる恐れがあるため避ける。",
+    "tags": ["one-hotエンコーディング", "カテゴリ変数"],
+    "imageUrl": null,
+    "source": "オリジナル",
+    "origin": "builtin"
+  },
+  {
+    "id": "de-0027",
+    "category": "データエンジニアリング力",
+    "subCategory": "前処理",
+    "type": "single",
+    "difficulty": 2,
+    "question": "母集団全体を調べる代わりに、その一部を抽出して調べることを指す語はどれか。",
+    "choices": [
+      { "key": "a", "text": "サンプリング（標本抽出）" },
+      { "key": "b", "text": "アノテーション" },
+      { "key": "c", "text": "名寄せ" },
+      { "key": "d", "text": "正規化" }
+    ],
+    "answer": ["a"],
+    "explanation": "サンプリングは母集団から標本を抽出すること。偏りを避けるには無作為抽出（ランダムサンプリング）が基本で、抽出方法に偏りがあるとサンプリングバイアスが生じる。",
+    "tags": ["サンプリング", "標本抽出"],
+    "imageUrl": null,
+    "source": "オリジナル",
+    "origin": "builtin"
+  },
+  {
+    "id": "de-0028",
+    "category": "データエンジニアリング力",
+    "subCategory": "セキュリティ",
+    "type": "single",
+    "difficulty": 3,
+    "question": "暗号化と復号で同じ鍵を使う方式と、公開鍵・秘密鍵のペアを使う方式の組み合わせとして正しいものはどれか。",
+    "choices": [
+      { "key": "a", "text": "共通鍵（対称鍵）暗号 と 公開鍵（非対称鍵）暗号" },
+      { "key": "b", "text": "公開鍵暗号 と 共通鍵暗号" },
+      { "key": "c", "text": "ハッシュ関数 と 共通鍵暗号" },
+      { "key": "d", "text": "電子署名 と ハッシュ関数" }
+    ],
+    "answer": ["a"],
+    "explanation": "同じ鍵で暗号化・復号するのが共通鍵（対称鍵）暗号で高速だが鍵配送が課題。公開鍵で暗号化し秘密鍵で復号するのが公開鍵暗号で鍵配送に強く、電子署名にも使われる。",
+    "tags": ["共通鍵暗号", "公開鍵暗号"],
+    "imageUrl": null,
+    "source": "オリジナル",
+    "origin": "builtin"
+  },
+  {
+    "id": "de-0029",
+    "category": "データエンジニアリング力",
+    "subCategory": "セキュリティ",
+    "type": "single",
+    "difficulty": 2,
+    "question": "「本人であることを確かめること」と「その人にどの操作・資源を許すかを決めること」の組み合わせとして正しいものはどれか。",
+    "choices": [
+      { "key": "a", "text": "認証（Authentication） と 認可（Authorization）" },
+      { "key": "b", "text": "認可 と 認証" },
+      { "key": "c", "text": "暗号化 と 復号" },
+      { "key": "d", "text": "可用性 と 完全性" }
+    ],
+    "answer": ["a"],
+    "explanation": "認証は「誰であるか」を確認する行為、認可は「何を許可するか」を決める行為。ログインが認証、ログイン後に操作できる範囲を制御するのが認可。両者は混同しやすい。",
+    "tags": ["認証", "認可"],
+    "imageUrl": null,
+    "source": "オリジナル",
+    "origin": "builtin"
+  },
+  {
+    "id": "de-0030",
+    "category": "データエンジニアリング力",
+    "subCategory": "セキュリティ",
+    "type": "single",
+    "difficulty": 3,
+    "question": "Webアプリでユーザー入力をそのままSQLに組み込むことで、不正なSQLを実行されてしまう攻撃はどれか。",
+    "choices": [
+      { "key": "a", "text": "SQLインジェクション" },
+      { "key": "b", "text": "クロスサイトスクリプティング（XSS）" },
+      { "key": "c", "text": "DoS攻撃" },
+      { "key": "d", "text": "フィッシング" }
+    ],
+    "answer": ["a"],
+    "explanation": "SQLインジェクションは入力値を悪用して不正なSQLを実行させる攻撃。プレースホルダ（プリペアドステートメント）による入力値の適切な処理で防ぐ。入力を信頼しないことが基本。",
+    "tags": ["SQLインジェクション", "セキュリティ"],
+    "imageUrl": null,
+    "source": "オリジナル",
+    "origin": "builtin"
+  },
+  {
+    "id": "de-0031",
+    "category": "データエンジニアリング力",
+    "subCategory": "プログラミング",
+    "type": "single",
+    "difficulty": 2,
+    "question": "文字列のパターンマッチング（例: メールアドレスの形式チェックや抽出）に用いられる表現はどれか。",
+    "choices": [
+      { "key": "a", "text": "正規表現" },
+      { "key": "b", "text": "正規化" },
+      { "key": "c", "text": "正規分布" },
+      { "key": "d", "text": "正則化" }
+    ],
+    "answer": ["a"],
+    "explanation": "正規表現（regular expression）は文字列のパターンを記述し、検索・抽出・置換に使う。名前が似た「正規化」「正則化」「正規分布」とは全く別物なので混同に注意。",
+    "tags": ["正規表現", "文字列処理"],
+    "imageUrl": null,
+    "source": "オリジナル",
+    "origin": "builtin"
+  },
+  {
+    "id": "de-0032",
+    "category": "データエンジニアリング力",
+    "subCategory": "クラウド",
+    "type": "single",
+    "difficulty": 2,
+    "question": "クラウドサービスのうち、OSやミドルウェア込みの実行基盤が提供され、利用者はアプリ開発に専念できる形態はどれか。",
+    "choices": [
+      { "key": "a", "text": "IaaS" },
+      { "key": "b", "text": "PaaS" },
+      { "key": "c", "text": "SaaS" },
+      { "key": "d", "text": "オンプレミス" }
+    ],
+    "answer": ["b"],
+    "explanation": "IaaSはサーバ・ストレージ等の基盤提供、PaaSはOS・実行環境込みの開発プラットフォーム提供、SaaSは完成したアプリをサービスとして提供。利用者の管理範囲が異なる。",
+    "tags": ["クラウド", "IaaS", "PaaS", "SaaS"],
+    "imageUrl": null,
+    "source": "オリジナル",
+    "origin": "builtin"
+  },
+  {
+    "id": "de-0033",
+    "category": "データエンジニアリング力",
+    "subCategory": "プログラミング",
+    "type": "single",
+    "difficulty": 1,
+    "question": "ソースコードの変更履歴を記録し、複数人での共同開発や過去状態への復元を可能にするツールの種類はどれか。",
+    "choices": [
+      { "key": "a", "text": "バージョン管理システム（例: Git）" },
+      { "key": "b", "text": "表計算ソフト" },
+      { "key": "c", "text": "画像編集ソフト" },
+      { "key": "d", "text": "圧縮ソフト" }
+    ],
+    "answer": ["a"],
+    "explanation": "Gitに代表されるバージョン管理システムは変更履歴の記録・分岐（ブランチ）・復元・共同開発を支える。GitHub等はGitを用いたホスティングサービス。",
+    "tags": ["バージョン管理", "Git"],
+    "imageUrl": null,
+    "source": "オリジナル",
+    "origin": "builtin"
+  },
+  {
+    "id": "de-0034",
+    "category": "データエンジニアリング力",
+    "subCategory": "データ処理",
+    "type": "single",
+    "difficulty": 2,
+    "question": "Hadoopなどで用いられる、大規模データ処理を「分割して並列処理し（Map）、結果を集約する（Reduce）」枠組みはどれか。",
+    "choices": [
+      { "key": "a", "text": "MapReduce" },
+      { "key": "b", "text": "ETL" },
+      { "key": "c", "text": "CRUD" },
+      { "key": "d", "text": "OLTP" }
+    ],
+    "answer": ["a"],
+    "explanation": "MapReduceはデータを分割してMap処理で並列に変換し、Reduce処理で集約する分散処理モデル。大量データのバッチ集計に向く。",
+    "tags": ["MapReduce", "分散処理"],
+    "imageUrl": null,
+    "source": "オリジナル",
+    "origin": "builtin"
+  },
+  {
+    "id": "bi-0007",
+    "category": "ビジネス力",
+    "subCategory": "論理的思考",
+    "type": "single",
+    "difficulty": 1,
+    "question": "課題を上位概念から下位概念へと樹形図状に分解し、漏れ・ダブりなく整理する思考ツールはどれか。",
+    "choices": [
+      { "key": "a", "text": "ロジックツリー" },
+      { "key": "b", "text": "ガントチャート" },
+      { "key": "c", "text": "散布図" },
+      { "key": "d", "text": "ヒストグラム" }
+    ],
+    "answer": ["a"],
+    "explanation": "ロジックツリーは問題を樹形図状に分解する手法で、MECE（漏れなくダブりなく）に分けることが望ましい。原因追究や課題の構造化に使う。",
+    "tags": ["ロジックツリー", "MECE"],
+    "imageUrl": null,
+    "source": "オリジナル",
+    "origin": "builtin"
+  },
+  {
+    "id": "bi-0008",
+    "category": "ビジネス力",
+    "subCategory": "論理的思考",
+    "type": "single",
+    "difficulty": 2,
+    "question": "「一般的な法則を個別の事例に当てはめて結論を導く」推論方法はどれか。",
+    "choices": [
+      { "key": "a", "text": "演繹法" },
+      { "key": "b", "text": "帰納法" },
+      { "key": "c", "text": "アブダクション" },
+      { "key": "d", "text": "弁証法" }
+    ],
+    "answer": ["a"],
+    "explanation": "演繹法は一般則を個別事例に適用して結論を導く（例: 三段論法）。帰納法は複数の個別事例から一般的な法則を見出す。両者の向きの違いを押さえる。",
+    "tags": ["演繹法", "帰納法"],
+    "imageUrl": null,
+    "source": "オリジナル",
+    "origin": "builtin"
+  },
+  {
+    "id": "bi-0009",
+    "category": "ビジネス力",
+    "subCategory": "課題設定",
+    "type": "single",
+    "difficulty": 2,
+    "question": "「仮説思考」によるデータ分析の進め方として最も適切なものはどれか。",
+    "choices": [
+      { "key": "a", "text": "先に仮の答え（仮説）を立て、それを検証するために必要な分析を絞り込む" },
+      { "key": "b", "text": "入手できるデータをすべて網羅的に分析してから考える" },
+      { "key": "c", "text": "仮説は分析が完全に終わってから初めて立てる" },
+      { "key": "d", "text": "仮説を一度立てたら検証結果に関わらず変更しない" }
+    ],
+    "answer": ["a"],
+    "explanation": "仮説思考は限られた情報からまず仮の結論を置き、検証に必要な分析へ集中することで効率を高める考え方。検証結果に応じて仮説を更新していく姿勢も重要。",
+    "tags": ["仮説思考", "課題設定"],
+    "imageUrl": null,
+    "source": "オリジナル",
+    "origin": "builtin"
+  },
+  {
+    "id": "bi-0010",
+    "category": "ビジネス力",
+    "subCategory": "ビジネス活用",
+    "type": "single",
+    "difficulty": 2,
+    "question": "本格導入の前に、小規模に試して効果や実現性を検証する取り組みを指す語はどれか。",
+    "choices": [
+      { "key": "a", "text": "PoC（概念実証）" },
+      { "key": "b", "text": "KPI" },
+      { "key": "c", "text": "SLA" },
+      { "key": "d", "text": "RFP" }
+    ],
+    "answer": ["a"],
+    "explanation": "PoC（Proof of Concept、概念実証）は本格展開前に小規模に試し、技術的・ビジネス的な実現可能性や効果を検証する取り組み。リスクを抑えて意思決定するために行う。",
+    "tags": ["PoC", "概念実証"],
+    "imageUrl": null,
+    "source": "オリジナル",
+    "origin": "builtin"
+  },
+  {
+    "id": "bi-0011",
+    "category": "ビジネス力",
+    "subCategory": "データ倫理・法令",
+    "type": "single",
+    "difficulty": 2,
+    "question": "個人情報保護法上の「個人情報」に関する説明として最も適切なものはどれか。",
+    "choices": [
+      { "key": "a", "text": "生存する個人に関する情報で、特定の個人を識別できるもの（他の情報と容易に照合して識別できる場合を含む）" },
+      { "key": "b", "text": "氏名さえ含まなければ一切個人情報には当たらない" },
+      { "key": "c", "text": "企業の売上などの法人情報も常に個人情報である" },
+      { "key": "d", "text": "死亡した人の情報も必ず個人情報に含まれる" }
+    ],
+    "answer": ["a"],
+    "explanation": "個人情報は「生存する個人に関する情報で特定の個人を識別できるもの」。他の情報と容易に照合でき識別可能なものも含む。氏名がなくても識別できれば該当し得る。",
+    "tags": ["個人情報", "個人情報保護法"],
+    "imageUrl": null,
+    "source": "オリジナル",
+    "origin": "builtin"
+  },
+  {
+    "id": "bi-0012",
+    "category": "ビジネス力",
+    "subCategory": "データ倫理・法令",
+    "type": "multiple",
+    "difficulty": 3,
+    "question": "個人情報保護法の「要配慮個人情報」に該当しうるものをすべて選べ。",
+    "choices": [
+      { "key": "a", "text": "人種・信条" },
+      { "key": "b", "text": "病歴・健康診断の結果" },
+      { "key": "c", "text": "犯罪の経歴" },
+      { "key": "d", "text": "購入した商品の金額" }
+    ],
+    "answer": ["a", "b", "c"],
+    "explanation": "要配慮個人情報は、人種・信条・社会的身分・病歴・犯罪歴・犯罪被害など、不当な差別や偏見が生じうる情報で、取得には原則として本人同意が必要。単なる購入金額は通常含まれない。",
+    "tags": ["要配慮個人情報", "個人情報保護法"],
+    "imageUrl": null,
+    "source": "オリジナル",
+    "origin": "builtin"
+  },
+  {
+    "id": "bi-0013",
+    "category": "ビジネス力",
+    "subCategory": "データ倫理・法令",
+    "type": "single",
+    "difficulty": 3,
+    "question": "個人データを本人の同意なく第三者に提供する際に、一定要件のもとで認められる「オプトアウト」方式の説明として最も適切なものはどれか。",
+    "choices": [
+      { "key": "a", "text": "本人が拒否する機会を確保し、所定事項をあらかじめ本人に通知・公表したうえで第三者提供する方式" },
+      { "key": "b", "text": "本人の同意を毎回必ず個別取得する方式" },
+      { "key": "c", "text": "どんな個人データでも自由に第三者提供できる方式" },
+      { "key": "d", "text": "要配慮個人情報でも無条件に第三者提供できる方式" }
+    ],
+    "answer": ["a"],
+    "explanation": "オプトアウトは、本人の求めがあれば提供を停止することを前提に、所定事項を通知・公表（個人情報保護委員会への届出等）したうえで本人同意なく第三者提供できる方式。要配慮個人情報はオプトアウトの対象外。",
+    "tags": ["オプトアウト", "第三者提供"],
+    "imageUrl": null,
+    "source": "オリジナル",
+    "origin": "builtin"
+  },
+  {
+    "id": "bi-0014",
+    "category": "ビジネス力",
+    "subCategory": "データ倫理・法令",
+    "type": "single",
+    "difficulty": 3,
+    "question": "「仮名加工情報」と「匿名加工情報」の違いの説明として最も適切なものはどれか。",
+    "choices": [
+      { "key": "a", "text": "仮名加工情報は他の情報と照合しなければ個人を特定できないよう加工したもので、原則として内部での利活用が想定される" },
+      { "key": "b", "text": "仮名加工情報は誰にも復元できないよう加工したものである" },
+      { "key": "c", "text": "匿名加工情報は元の個人情報に容易に復元できる" },
+      { "key": "d", "text": "両者はまったく同じものである" }
+    ],
+    "answer": ["a"],
+    "explanation": "仮名加工情報は他情報と照合しない限り個人を特定できないよう加工したもので主に内部分析向け。匿名加工情報は特定・復元ができないよう加工し一定条件で第三者提供も可能。加工の程度と利用範囲が異なる。",
+    "tags": ["仮名加工情報", "匿名加工情報"],
+    "imageUrl": null,
+    "source": "オリジナル",
+    "origin": "builtin"
+  },
+  {
+    "id": "bi-0015",
+    "category": "ビジネス力",
+    "subCategory": "データ倫理・法令",
+    "type": "single",
+    "difficulty": 2,
+    "question": "EU域内の個人データ保護を定め、域外への移転や違反時の高額な制裁金で知られる規則はどれか。",
+    "choices": [
+      { "key": "a", "text": "GDPR（EU一般データ保護規則）" },
+      { "key": "b", "text": "HTTP" },
+      { "key": "c", "text": "ISO 9001" },
+      { "key": "d", "text": "PL法" }
+    ],
+    "answer": ["a"],
+    "explanation": "GDPRはEUの一般データ保護規則で、EU域内の個人データの取扱い・域外移転を規制し、違反には高額の制裁金が科され得る。日本企業もEU住民のデータを扱う場合は対象となり得る。",
+    "tags": ["GDPR", "データ保護"],
+    "imageUrl": null,
+    "source": "オリジナル",
+    "origin": "builtin"
+  },
+  {
+    "id": "bi-0016",
+    "category": "ビジネス力",
+    "subCategory": "契約・権利",
+    "type": "single",
+    "difficulty": 2,
+    "question": "著作権に関する説明として最も適切なものはどれか。",
+    "choices": [
+      { "key": "a", "text": "思想・感情を創作的に表現した著作物に発生し、原則として登録なしに創作時点で生じる" },
+      { "key": "b", "text": "特許庁に出願・登録して初めて発生する" },
+      { "key": "c", "text": "単なる事実やアイデアそのものにも当然に発生する" },
+      { "key": "d", "text": "著作権は永久に消滅しない" }
+    ],
+    "answer": ["a"],
+    "explanation": "著作権は創作的な表現に対して創作時点で自動的に発生し、登録は不要（無方式主義）。アイデアや単なる事実自体は保護対象外で、保護期間にも限りがある。",
+    "tags": ["著作権", "知的財産"],
+    "imageUrl": null,
+    "source": "オリジナル",
+    "origin": "builtin"
+  },
+  {
+    "id": "bi-0017",
+    "category": "ビジネス力",
+    "subCategory": "契約・権利",
+    "type": "single",
+    "difficulty": 3,
+    "question": "不正競争防止法で保護される「営業秘密」の要件に含まれないものはどれか。",
+    "choices": [
+      { "key": "a", "text": "秘密として管理されていること（秘密管理性）" },
+      { "key": "b", "text": "事業活動に有用な情報であること（有用性）" },
+      { "key": "c", "text": "公然と知られていないこと（非公知性）" },
+      { "key": "d", "text": "特許として登録されていること" }
+    ],
+    "answer": ["d"],
+    "explanation": "営業秘密の3要件は秘密管理性・有用性・非公知性。特許登録は要件ではなく、むしろ特許は内容が公開されるため非公知性と相反する。顧客名簿や製造ノウハウ等が営業秘密の例。",
+    "tags": ["営業秘密", "不正競争防止法"],
+    "imageUrl": null,
+    "source": "オリジナル",
+    "origin": "builtin"
+  },
+  {
+    "id": "bi-0018",
+    "category": "ビジネス力",
+    "subCategory": "データ倫理・法令",
+    "type": "single",
+    "difficulty": 2,
+    "question": "AIやデータ活用の検討で重視される「ELSI」が指すものとして最も適切なものはどれか。",
+    "choices": [
+      { "key": "a", "text": "倫理的・法的・社会的な課題（Ethical, Legal and Social Issues）" },
+      { "key": "b", "text": "電子学習システムの略" },
+      { "key": "c", "text": "統計検定の一手法" },
+      { "key": "d", "text": "クラウドの料金体系" }
+    ],
+    "answer": ["a"],
+    "explanation": "ELSIは Ethical, Legal and Social Issues の略で、技術が引き起こす倫理的・法的・社会的課題を指す。AI・データ活用を社会実装する際に併せて検討すべき観点。",
+    "tags": ["ELSI", "AI倫理"],
+    "imageUrl": null,
+    "source": "オリジナル",
+    "origin": "builtin"
+  },
+  {
+    "id": "bi-0019",
+    "category": "ビジネス力",
+    "subCategory": "データ倫理・法令",
+    "type": "single",
+    "difficulty": 2,
+    "question": "データ取得時の「インフォームドコンセント」の説明として最も適切なものはどれか。",
+    "choices": [
+      { "key": "a", "text": "利用目的やリスクを十分に説明し、本人が理解したうえで同意を得ること" },
+      { "key": "b", "text": "同意は不要で、取得後に通知すればよいこと" },
+      { "key": "c", "text": "専門用語のみで説明し、形式的に署名させること" },
+      { "key": "d", "text": "本人以外の第三者から同意を得ること" }
+    ],
+    "answer": ["a"],
+    "explanation": "インフォームドコンセントは、目的・利用方法・リスクなどを本人に十分説明し、理解したうえで自発的な同意を得ること。形式的な同意取得や説明不足は適切とはいえない。",
+    "tags": ["インフォームドコンセント", "同意"],
+    "imageUrl": null,
+    "source": "オリジナル",
+    "origin": "builtin"
+  },
+  {
+    "id": "bi-0020",
+    "category": "ビジネス力",
+    "subCategory": "論理的思考",
+    "type": "single",
+    "difficulty": 2,
+    "question": "自説に都合のよい情報ばかりを集め、反証となる情報を軽視してしまう認知の偏りはどれか。",
+    "choices": [
+      { "key": "a", "text": "確証バイアス" },
+      { "key": "b", "text": "生存者バイアス" },
+      { "key": "c", "text": "正規化バイアス" },
+      { "key": "d", "text": "サンプリングバイアス" }
+    ],
+    "answer": ["a"],
+    "explanation": "確証バイアスは仮説を支持する情報を優先して集め、反証を無視・軽視する傾向。データ分析では反証可能性を意識し、客観的に検証する姿勢が重要。",
+    "tags": ["確証バイアス", "認知バイアス"],
+    "imageUrl": null,
+    "source": "オリジナル",
+    "origin": "builtin"
+  },
+  {
+    "id": "bi-0021",
+    "category": "ビジネス力",
+    "subCategory": "論理的思考",
+    "type": "single",
+    "difficulty": 3,
+    "question": "「成功した事例（生き残ったデータ）だけを見て判断し、脱落・失敗した事例を見落とす」ことによる誤りはどれか。",
+    "choices": [
+      { "key": "a", "text": "生存者バイアス" },
+      { "key": "b", "text": "確証バイアス" },
+      { "key": "c", "text": "ホーソン効果" },
+      { "key": "d", "text": "平均への回帰" }
+    ],
+    "answer": ["a"],
+    "explanation": "生存者バイアスは、残った（成功した）データのみを分析対象にし、脱落した対象を見落とすことで生じる偏り。途中解約者を除いた顧客分析などで誤った結論を導きやすい。",
+    "tags": ["生存者バイアス", "バイアス"],
+    "imageUrl": null,
+    "source": "オリジナル",
+    "origin": "builtin"
+  },
+  {
+    "id": "bi-0022",
+    "category": "ビジネス力",
+    "subCategory": "ビジネス活用",
+    "type": "single",
+    "difficulty": 2,
+    "question": "投資に対する利益の割合を示し、施策の費用対効果を評価する指標はどれか。",
+    "choices": [
+      { "key": "a", "text": "ROI（投資収益率）" },
+      { "key": "b", "text": "CPU使用率" },
+      { "key": "c", "text": "p値" },
+      { "key": "d", "text": "AUC" }
+    ],
+    "answer": ["a"],
+    "explanation": "ROI（Return On Investment）は利益 ÷ 投資額で求める費用対効果の指標。データ施策の妥当性をビジネス的に説明する際に用いられる。",
+    "tags": ["ROI", "費用対効果"],
+    "imageUrl": null,
+    "source": "オリジナル",
+    "origin": "builtin"
+  },
+  {
+    "id": "bi-0023",
+    "category": "ビジネス力",
+    "subCategory": "ビジネス活用",
+    "type": "single",
+    "difficulty": 1,
+    "question": "勘や経験だけに頼らず、データに基づいて意思決定を行う考え方を指す語はどれか。",
+    "choices": [
+      { "key": "a", "text": "データドリブン（データ駆動）" },
+      { "key": "b", "text": "トップダウンのみの意思決定" },
+      { "key": "c", "text": "ヒューリスティック専従" },
+      { "key": "d", "text": "ウォーターフォール" }
+    ],
+    "answer": ["a"],
+    "explanation": "データドリブンは、客観的なデータと分析結果に基づいて意思決定や施策立案を行う姿勢。PDCAサイクルと組み合わせ、結果を計測・改善につなげることが重要。",
+    "tags": ["データドリブン", "意思決定"],
+    "imageUrl": null,
+    "source": "オリジナル",
+    "origin": "builtin"
+  },
+  {
+    "id": "bi-0024",
+    "category": "ビジネス力",
+    "subCategory": "可視化",
+    "type": "single",
+    "difficulty": 2,
+    "question": "棒グラフで「縦軸を0から始めず途中から始める」ことの問題点として最も適切なものはどれか。",
+    "choices": [
+      { "key": "a", "text": "差を実際より大きく見せ、誤解を招くおそれがある" },
+      { "key": "b", "text": "常に正しく、推奨される表現である" },
+      { "key": "c", "text": "データの値自体が変わってしまう" },
+      { "key": "d", "text": "棒グラフでは軸の起点に決まりはない" }
+    ],
+    "answer": ["a"],
+    "explanation": "棒グラフは長さで量を比較するため、縦軸を0から始めないとわずかな差を過大に見せ、印象を歪める。誠実な可視化のため軸の起点に配慮する（折れ線では必ずしも0起点でなくてよい場合もある）。",
+    "tags": ["グラフの誤用", "可視化倫理"],
+    "imageUrl": null,
+    "source": "オリジナル",
+    "origin": "builtin"
+  },
+  {
+    "id": "bi-0025",
+    "category": "ビジネス力",
+    "subCategory": "論理的思考",
+    "type": "single",
+    "difficulty": 3,
+    "question": "「アイスクリームの売上」と「水難事故件数」に強い正の相関がみられた。最も適切な解釈はどれか。",
+    "choices": [
+      { "key": "a", "text": "気温という共通要因（交絡因子）が両者を押し上げている擬似相関の可能性が高い" },
+      { "key": "b", "text": "アイスを食べると水難事故が増える因果関係がある" },
+      { "key": "c", "text": "水難事故が増えるとアイスが売れる因果関係がある" },
+      { "key": "d", "text": "相関があるので必ず一方が他方の原因である" }
+    ],
+    "answer": ["a"],
+    "explanation": "両者は「気温が高い」という共通要因により同時に増える擬似相関（見かけの相関）の典型例。交絡因子を考慮せず相関から因果を結論づけてはいけない。",
+    "tags": ["擬似相関", "交絡因子", "相関と因果"],
+    "imageUrl": null,
+    "source": "オリジナル",
+    "origin": "builtin"
+  },
+  {
+    "id": "bi-0026",
+    "category": "ビジネス力",
+    "subCategory": "ビジネス活用",
+    "type": "single",
+    "difficulty": 2,
+    "question": "KGIとKPIの設計に関する説明として最も適切なものはどれか。",
+    "choices": [
+      { "key": "a", "text": "最終目標であるKGIを頂点に、その達成を分解した中間指標KPIをツリー状に設計する" },
+      { "key": "b", "text": "KPIは測定できない定性的な目標にすべきである" },
+      { "key": "c", "text": "KPIは多ければ多いほど常によい" },
+      { "key": "d", "text": "KGIとKPIは互いに無関係に設定する" }
+    ],
+    "answer": ["a"],
+    "explanation": "KGI（最終目標）を頂点に、それを達成するための中間指標KPIを分解して設計する（KPIツリー）。KPIは測定可能（定量的）で、KGIと因果的につながっていることが重要。",
+    "tags": ["KGI", "KPI", "KPIツリー"],
+    "imageUrl": null,
+    "source": "オリジナル",
+    "origin": "builtin"
+  },
+  {
+    "id": "bi-0027",
+    "category": "ビジネス力",
+    "subCategory": "データ倫理・法令",
+    "type": "single",
+    "difficulty": 2,
+    "question": "広告メール配信などにおける「オプトイン」の説明として最も適切なものはどれか。",
+    "choices": [
+      { "key": "a", "text": "本人が事前に受信や利用に同意した場合にのみ行える方式" },
+      { "key": "b", "text": "本人が拒否しない限り送ってよい方式" },
+      { "key": "c", "text": "同意の有無を問わず送れる方式" },
+      { "key": "d", "text": "送信後に同意を得る方式" }
+    ],
+    "answer": ["a"],
+    "explanation": "オプトインは本人の事前同意を前提とする方式。拒否がない限り認められるオプトアウトと対になる概念で、特定電子メール法では広告メールは原則オプトイン方式が求められる。",
+    "tags": ["オプトイン", "オプトアウト"],
+    "imageUrl": null,
+    "source": "オリジナル",
+    "origin": "builtin"
+  },
+  {
+    "id": "bi-0028",
+    "category": "ビジネス力",
+    "subCategory": "ビジネス活用",
+    "type": "single",
+    "difficulty": 2,
+    "question": "2つ以上の項目を掛け合わせて集計し、属性ごとの傾向の違いを把握する表はどれか。",
+    "choices": [
+      { "key": "a", "text": "クロス集計表" },
+      { "key": "b", "text": "度数分布表（1変数）" },
+      { "key": "c", "text": "ガントチャート" },
+      { "key": "d", "text": "相関行列" }
+    ],
+    "answer": ["a"],
+    "explanation": "クロス集計表は2つ以上のカテゴリ項目を掛け合わせて件数や割合を集計し、セグメント間の傾向の違いを把握できる。性別×購入有無などの分析に有効で、カイ二乗検定の入力にもなる。",
+    "tags": ["クロス集計", "セグメント"],
+    "imageUrl": null,
+    "source": "オリジナル",
+    "origin": "builtin"
+  },
+  {
+    "id": "li-0006",
+    "category": "数理・データサイエンス・AIリテラシー",
+    "subCategory": "AI基礎",
+    "type": "single",
+    "difficulty": 2,
+    "question": "人間の脳神経の仕組みに着想を得て、入力層・中間層・出力層のユニットの結合で表現するモデルはどれか。",
+    "choices": [
+      { "key": "a", "text": "ニューラルネットワーク" },
+      { "key": "b", "text": "決定木" },
+      { "key": "c", "text": "k-meansクラスタリング" },
+      { "key": "d", "text": "線形回帰" }
+    ],
+    "answer": ["a"],
+    "explanation": "ニューラルネットワークは神経細胞（ニューロン）を模したユニットを層状に結合したモデル。中間層（隠れ層）を多数重ねたものがディープラーニング（深層学習）。",
+    "tags": ["ニューラルネットワーク", "ディープラーニング"],
+    "imageUrl": null,
+    "source": "オリジナル",
+    "origin": "builtin"
+  },
+  {
+    "id": "li-0007",
+    "category": "数理・データサイエンス・AIリテラシー",
+    "subCategory": "AI利活用",
+    "type": "single",
+    "difficulty": 2,
+    "question": "画像認識で高い性能を発揮し、画像の局所的な特徴を抽出することに長けたニューラルネットワークはどれか。",
+    "choices": [
+      { "key": "a", "text": "畳み込みニューラルネットワーク（CNN）" },
+      { "key": "b", "text": "線形回帰" },
+      { "key": "c", "text": "決定木" },
+      { "key": "d", "text": "k近傍法" }
+    ],
+    "answer": ["a"],
+    "explanation": "CNN（Convolutional Neural Network）は畳み込み層で画像の局所特徴を捉え、画像認識・物体検出で高い性能を示す。時系列・文章にはRNNやTransformerが使われる。",
+    "tags": ["CNN", "画像認識"],
+    "imageUrl": null,
+    "source": "オリジナル",
+    "origin": "builtin"
+  },
+  {
+    "id": "li-0008",
+    "category": "数理・データサイエンス・AIリテラシー",
+    "subCategory": "AI利活用",
+    "type": "single",
+    "difficulty": 1,
+    "question": "人間の言葉（テキストや音声）をコンピュータに処理・理解させる技術分野はどれか。",
+    "choices": [
+      { "key": "a", "text": "自然言語処理（NLP）" },
+      { "key": "b", "text": "画像処理" },
+      { "key": "c", "text": "数値最適化" },
+      { "key": "d", "text": "信号圧縮" }
+    ],
+    "answer": ["a"],
+    "explanation": "自然言語処理（NLP）は人間の言語をコンピュータで扱う分野で、翻訳・要約・感情分析・チャットボット・大規模言語モデルなどに応用される。",
+    "tags": ["自然言語処理", "NLP"],
+    "imageUrl": null,
+    "source": "オリジナル",
+    "origin": "builtin"
+  },
+  {
+    "id": "li-0009",
+    "category": "数理・データサイエンス・AIリテラシー",
+    "subCategory": "AI利活用",
+    "type": "single",
+    "difficulty": 1,
+    "question": "定型的な事務作業（データ入力・転記など）をソフトウェアのロボットで自動化する仕組みはどれか。",
+    "choices": [
+      { "key": "a", "text": "RPA" },
+      { "key": "b", "text": "CRM" },
+      { "key": "c", "text": "BI" },
+      { "key": "d", "text": "CDN" }
+    ],
+    "answer": ["a"],
+    "explanation": "RPA（Robotic Process Automation）はPC上の定型業務をソフトウェアロボットで自動化する仕組み。ルールベースの繰り返し作業の効率化に向く。",
+    "tags": ["RPA", "業務自動化"],
+    "imageUrl": null,
+    "source": "オリジナル",
+    "origin": "builtin"
+  },
+  {
+    "id": "li-0010",
+    "category": "数理・データサイエンス・AIリテラシー",
+    "subCategory": "生成AI",
+    "type": "single",
+    "difficulty": 1,
+    "question": "生成AI（大規模言語モデル）に対して、目的の出力を得るために与える指示文を指す語はどれか。",
+    "choices": [
+      { "key": "a", "text": "プロンプト" },
+      { "key": "b", "text": "コンパイル" },
+      { "key": "c", "text": "デバッグ" },
+      { "key": "d", "text": "インデックス" }
+    ],
+    "answer": ["a"],
+    "explanation": "プロンプトは生成AIへの入力指示文。意図した出力を引き出すために指示を工夫することをプロンプトエンジニアリングと呼ぶ。",
+    "tags": ["プロンプト", "生成AI"],
+    "imageUrl": null,
+    "source": "オリジナル",
+    "origin": "builtin"
+  },
+  {
+    "id": "li-0011",
+    "category": "数理・データサイエンス・AIリテラシー",
+    "subCategory": "生成AI",
+    "type": "multiple",
+    "difficulty": 2,
+    "question": "生成AIを業務利用する際に注意すべきことをすべて選べ。",
+    "choices": [
+      { "key": "a", "text": "機密情報や個人情報の入力可否は利用規約・社内ルールを確認する" },
+      { "key": "b", "text": "出力には誤り（ハルシネーション）があり得るため事実確認する" },
+      { "key": "c", "text": "生成物の著作権・権利関係に留意する" },
+      { "key": "d", "text": "出力は常に正確なので検証は不要である" }
+    ],
+    "answer": ["a", "b", "c"],
+    "explanation": "生成AIの利用では、入力する情報の機密性、出力の正確性（ハルシネーション）、生成物の権利関係への配慮が必要。出力を無検証で信頼するのは不適切。",
+    "tags": ["生成AI", "リテラシー", "ハルシネーション"],
+    "imageUrl": null,
+    "source": "オリジナル",
+    "origin": "builtin"
+  },
+  {
+    "id": "li-0012",
+    "category": "数理・データサイエンス・AIリテラシー",
+    "subCategory": "生成AI",
+    "type": "single",
+    "difficulty": 2,
+    "question": "AIを用いて本物と見分けがつきにくい偽の画像・音声・動画を生成・合成する技術やその生成物を指す語はどれか。",
+    "choices": [
+      { "key": "a", "text": "ディープフェイク" },
+      { "key": "b", "text": "データクレンジング" },
+      { "key": "c", "text": "アノテーション" },
+      { "key": "d", "text": "スクレイピング" }
+    ],
+    "answer": ["a"],
+    "explanation": "ディープフェイクは深層学習で本物そっくりの偽メディアを生成する技術。なりすましや偽情報の拡散などの悪用リスクがあり、リテラシーとして注意が必要。",
+    "tags": ["ディープフェイク", "偽情報"],
+    "imageUrl": null,
+    "source": "オリジナル",
+    "origin": "builtin"
+  },
+  {
+    "id": "li-0013",
+    "category": "数理・データサイエンス・AIリテラシー",
+    "subCategory": "社会実装",
+    "type": "single",
+    "difficulty": 2,
+    "question": "サイバー空間とフィジカル空間を高度に融合させ、経済発展と社会的課題の解決を両立する人間中心の社会として日本が提唱する概念はどれか。",
+    "choices": [
+      { "key": "a", "text": "Society 5.0" },
+      { "key": "b", "text": "Web 2.0" },
+      { "key": "c", "text": "OECD原則" },
+      { "key": "d", "text": "GAFA" }
+    ],
+    "answer": ["a"],
+    "explanation": "Society 5.0は、狩猟・農耕・工業・情報社会に続く新たな社会像として日本が提唱。IoTやAIでサイバー空間と現実空間を融合し、課題解決と経済発展の両立を目指す。",
+    "tags": ["Society 5.0", "社会実装"],
+    "imageUrl": null,
+    "source": "オリジナル",
+    "origin": "builtin"
+  },
+  {
+    "id": "li-0014",
+    "category": "数理・データサイエンス・AIリテラシー",
+    "subCategory": "社会実装",
+    "type": "single",
+    "difficulty": 2,
+    "question": "デジタル技術を活用して製品・サービスやビジネスモデル、組織・業務プロセスを変革する取り組みを指す語はどれか。",
+    "choices": [
+      { "key": "a", "text": "DX（デジタルトランスフォーメーション）" },
+      { "key": "b", "text": "EC" },
+      { "key": "c", "text": "BPR専用ツール" },
+      { "key": "d", "text": "OSS" }
+    ],
+    "answer": ["a"],
+    "explanation": "DX（Digital Transformation）は、デジタル技術によって事業や組織・業務、価値提供のあり方を変革すること。単なるIT化・デジタル化にとどまらず変革を伴う点が要点。",
+    "tags": ["DX", "デジタル変革"],
+    "imageUrl": null,
+    "source": "オリジナル",
+    "origin": "builtin"
+  },
+  {
+    "id": "li-0015",
+    "category": "数理・データサイエンス・AIリテラシー",
+    "subCategory": "社会実装",
+    "type": "single",
+    "difficulty": 3,
+    "question": "AIの予測や判断の根拠を人間が理解できるように説明可能にする取り組み・技術を指す語はどれか。",
+    "choices": [
+      { "key": "a", "text": "説明可能なAI（XAI）" },
+      { "key": "b", "text": "強化学習" },
+      { "key": "c", "text": "データレイク" },
+      { "key": "d", "text": "エッジAI" }
+    ],
+    "answer": ["a"],
+    "explanation": "XAI（Explainable AI）は、ブラックボックス化しがちなAIの判断根拠を人間が解釈できるようにする技術・考え方。説明責任や信頼性、社会実装における透明性の確保に重要。",
+    "tags": ["XAI", "説明可能性"],
+    "imageUrl": null,
+    "source": "オリジナル",
+    "origin": "builtin"
+  },
+  {
+    "id": "li-0016",
+    "category": "数理・データサイエンス・AIリテラシー",
+    "subCategory": "数理基礎",
+    "type": "single",
+    "difficulty": 2,
+    "question": "異なる4種類のトッピングから2種類を選ぶ組み合わせの数（順序は区別しない）はいくつか。",
+    "choices": [
+      { "key": "a", "text": "4通り" },
+      { "key": "b", "text": "6通り" },
+      { "key": "c", "text": "8通り" },
+      { "key": "d", "text": "12通り" }
+    ],
+    "answer": ["b"],
+    "explanation": "組み合わせ C(4,2) = 4! ÷ (2!×2!) = 6通り。順序を区別する順列 P(4,2)=12 と混同しないこと。組合せは順序を区別しない。",
+    "tags": ["組み合わせ", "場合の数"],
+    "imageUrl": null,
+    "source": "オリジナル",
+    "origin": "builtin"
+  },
+  {
+    "id": "li-0017",
+    "category": "数理・データサイエンス・AIリテラシー",
+    "subCategory": "数理基礎",
+    "type": "single",
+    "difficulty": 2,
+    "question": "log₁₀(1000) の値として正しいものはどれか。",
+    "choices": [
+      { "key": "a", "text": "2" },
+      { "key": "b", "text": "3" },
+      { "key": "c", "text": "10" },
+      { "key": "d", "text": "100" }
+    ],
+    "answer": ["b"],
+    "explanation": "10を何乗すると1000になるかを問うのが常用対数。10³ = 1000 なので log₁₀(1000) = 3。対数は桁数や指数的な量の扱いで頻出。",
+    "tags": ["対数", "指数"],
+    "imageUrl": null,
+    "source": "オリジナル",
+    "origin": "builtin"
+  },
+  {
+    "id": "li-0018",
+    "category": "数理・データサイエンス・AIリテラシー",
+    "subCategory": "数理基礎",
+    "type": "single",
+    "difficulty": 3,
+    "question": "機械学習で「損失関数を最小化する方向（最も急に減少する向き）」を求めるために用いられる、関数の傾きを表す概念はどれか。",
+    "choices": [
+      { "key": "a", "text": "微分（勾配）" },
+      { "key": "b", "text": "積分" },
+      { "key": "c", "text": "行列式" },
+      { "key": "d", "text": "余事象" }
+    ],
+    "answer": ["a"],
+    "explanation": "微分は関数の傾き（変化率）を表し、多変数では勾配（gradient）となる。勾配降下法は損失関数の勾配が示す減少方向にパラメータを更新して最小化を目指す。",
+    "tags": ["微分", "勾配", "最適化"],
+    "imageUrl": null,
+    "source": "オリジナル",
+    "origin": "builtin"
+  },
+  {
+    "id": "li-0019",
+    "category": "数理・データサイエンス・AIリテラシー",
+    "subCategory": "ビッグデータ",
+    "type": "single",
+    "difficulty": 1,
+    "question": "モノ（センサーや家電・車など）をインターネットに接続し、データを収集・活用する仕組みを指す語はどれか。",
+    "choices": [
+      { "key": "a", "text": "IoT" },
+      { "key": "b", "text": "VPN" },
+      { "key": "c", "text": "CMS" },
+      { "key": "d", "text": "DNS" }
+    ],
+    "answer": ["a"],
+    "explanation": "IoT（Internet of Things）はあらゆるモノをネットに接続してデータを収集・制御する仕組み。大量・多様・高頻度なデータ（ビッグデータ）の源泉となる。",
+    "tags": ["IoT", "ビッグデータ"],
+    "imageUrl": null,
+    "source": "オリジナル",
+    "origin": "builtin"
+  },
+  {
+    "id": "li-0020",
+    "category": "数理・データサイエンス・AIリテラシー",
+    "subCategory": "ビッグデータ",
+    "type": "single",
+    "difficulty": 2,
+    "question": "国や自治体などが、誰でも二次利用しやすい形で無償公開するデータを指す語はどれか。",
+    "choices": [
+      { "key": "a", "text": "オープンデータ" },
+      { "key": "b", "text": "営業秘密" },
+      { "key": "c", "text": "要配慮個人情報" },
+      { "key": "d", "text": "ダークデータ" }
+    ],
+    "answer": ["a"],
+    "explanation": "オープンデータは、機械判読に適し誰もが許可された範囲で自由に利用・再配布できる形で公開されるデータ。行政の統計や地理情報などが代表例で、官民のデータ活用を促進する。",
+    "tags": ["オープンデータ", "データ活用"],
+    "imageUrl": null,
+    "source": "オリジナル",
+    "origin": "builtin"
   }
 ]

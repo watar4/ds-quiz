@@ -4,6 +4,7 @@ node_modules
 # build output
 dist
 dist-ssr
+*.tsbuildinfo
 
 # local env files — NEVER commit real API keys
 .env

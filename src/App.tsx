@@ -10,6 +10,7 @@ const Quiz = lazy(() => import('./screens/Quiz'));
 const Result = lazy(() => import('./screens/Result'));
 const Review = lazy(() => import('./screens/Review'));
 const Stats = lazy(() => import('./screens/Stats'));
+const Glossary = lazy(() => import('./screens/Glossary'));
 const QuestionManager = lazy(() => import('./screens/QuestionManager'));
 const Settings = lazy(() => import('./screens/Settings'));
 const AIGenerate = lazy(() => import('./screens/AIGenerate'));
@@ -33,6 +34,7 @@ export default function App() {
           <Route path="/result" element={<Result />} />
           <Route path="/review" element={<Review />} />
           <Route path="/stats" element={<Stats />} />
+          <Route path="/glossary" element={<Glossary />} />
           <Route path="/questions" element={<QuestionManager />} />
           <Route path="/generate" element={<AIGenerate />} />
           <Route path="/settings" element={<Settings />} />

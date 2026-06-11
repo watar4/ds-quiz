@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { BarChart3, BookOpen, Database, RefreshCcw, Shuffle, Sparkles, Timer } from 'lucide-react';
+import { BarChart3, BookMarked, BookOpen, Database, RefreshCcw, Shuffle, Sparkles, Timer } from 'lucide-react';
 import { useStore } from '../store/useStore';
 import { toQuestionMap } from '../lib/questions';
 import { aggregateByCategory, formatPercent } from '../lib/scoring';
@@ -108,6 +108,7 @@ export default function Home() {
       )}
 
       <section className="flex flex-wrap gap-2">
+        <Link to="/glossary" className="btn-ghost"><BookMarked size={16} /> 解説・用語まとめ</Link>
         <Link to="/generate" className="btn-ghost"><Sparkles size={16} /> AIで問題を増やす</Link>
         <Link to="/questions" className="btn-ghost"><Database size={16} /> 問題管理</Link>
       </section>
