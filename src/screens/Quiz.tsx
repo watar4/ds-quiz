@@ -133,7 +133,7 @@ export default function Quiz() {
         <div className="ml-auto flex gap-1">
           <button
             onClick={() => toggleBookmark(q.id)}
-            className={`btn-ghost !px-2 !py-1 ${stats[q.id]?.bookmarked ? '!text-amber-500' : ''}`}
+            className={`btn-ghost px-2! py-1! ${stats[q.id]?.bookmarked ? 'text-amber-500!' : ''}`}
             aria-pressed={!!stats[q.id]?.bookmarked}
             aria-label="ブックマーク（後で復習）"
           >
@@ -142,7 +142,7 @@ export default function Quiz() {
           {mode === 'mock' && (
             <button
               onClick={() => quiz.toggleFlag(q.id)}
-              className={`btn-ghost !px-2 !py-1 ${quiz.flagged[q.id] ? '!text-orange-500' : ''}`}
+              className={`btn-ghost px-2! py-1! ${quiz.flagged[q.id] ? 'text-orange-500!' : ''}`}
               aria-pressed={!!quiz.flagged[q.id]}
               aria-label="あとで見直す"
             >

@@ -261,7 +261,7 @@ export default function Glossary() {
           value={keyword}
           onChange={(e) => setKeyword(e.target.value)}
           placeholder="用語・キーワードで検索（例: 再現率, JOIN, 匿名加工）"
-          className="w-full rounded-xl border border-slate-200 bg-white py-2 pl-9 pr-3 text-sm outline-none focus:border-brand-400 dark:border-slate-700 dark:bg-slate-900"
+          className="w-full rounded-xl border border-slate-200 bg-white py-2 pl-9 pr-3 text-sm outline-hidden focus:border-brand-400 dark:border-slate-700 dark:bg-slate-900"
         />
       </div>
 
@@ -305,7 +305,7 @@ export default function Glossary() {
           ) : (
             <ul className="space-y-2">
               {filteredTerms.map((t) => (
-                <li key={t.term} className="card !p-3">
+                <li key={t.term} className="card p-3!">
                   <div className="mb-1 flex flex-wrap items-baseline gap-2">
                     <span className="font-semibold">{t.term}</span>
                     {t.reading && <span className="text-xs text-slate-400">{t.reading}</span>}
@@ -326,7 +326,7 @@ export default function Glossary() {
           ) : (
             <ul className="space-y-3">
               {filteredConfusables.map((c) => (
-                <li key={c.title} className="card !p-3">
+                <li key={c.title} className="card p-3!">
                   <h3 className="mb-2 font-semibold">{c.title}</h3>
                   <div className="grid gap-2 sm:grid-cols-2">
                     {[c.a, c.b].map((side, i) => (
@@ -359,7 +359,7 @@ export default function Glossary() {
           ) : (
             <ul className="space-y-2">
               {filteredHard.map((h) => (
-                <li key={h.title} className="card !p-3">
+                <li key={h.title} className="card p-3!">
                   <h3 className="mb-1 flex items-center gap-1.5 font-semibold">
                     <AlertTriangle size={15} className="shrink-0 text-amber-500" />
                     {h.title}

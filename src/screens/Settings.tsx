@@ -143,7 +143,7 @@ export default function Settings() {
           <div className="mt-1 flex gap-2">
             <input type={showKey ? 'text' : 'password'} className="input font-mono" placeholder="sk-ant-..."
               value={ai.apiKey} onChange={(e) => setAISettings({ apiKey: e.target.value })} autoComplete="off" />
-            <button className="btn-ghost !px-3" onClick={() => setShowKey((v) => !v)} aria-label={showKey ? 'キーを隠す' : 'キーを表示'}>
+            <button className="btn-ghost px-3!" onClick={() => setShowKey((v) => !v)} aria-label={showKey ? 'キーを隠す' : 'キーを表示'}>
               {showKey ? <EyeOff size={18} /> : <Eye size={18} />}
             </button>
           </div>
@@ -154,7 +154,7 @@ export default function Settings() {
           </select>
         </label>
         {ai.apiKey && (
-          <button className="btn-ghost !text-red-600" onClick={() => setAISettings({ apiKey: '' })}>
+          <button className="btn-ghost text-red-600!" onClick={() => setAISettings({ apiKey: '' })}>
             <Trash2 size={16} /> キーを消去
           </button>
         )}
@@ -181,10 +181,10 @@ export default function Settings() {
       <section className="card space-y-3 border-red-200 dark:border-red-900/50">
         <h2 className="flex items-center gap-2 font-semibold text-red-600"><AlertTriangle size={18} /> リセット</h2>
         <div className="flex flex-wrap gap-2">
-          <button className="btn-ghost !text-red-600" onClick={() => { if (confirm('成績・履歴・統計をリセットします。よろしいですか？')) { resetProgress(); setMsg('成績データをリセットしました。'); } }}>
+          <button className="btn-ghost text-red-600!" onClick={() => { if (confirm('成績・履歴・統計をリセットします。よろしいですか？')) { resetProgress(); setMsg('成績データをリセットしました。'); } }}>
             成績・履歴をリセット
           </button>
-          <button className="btn-ghost !text-red-600" onClick={() => { if (confirm('すべての学習データ（成績・生成問題・無効設定）を削除します。元に戻せません。よろしいですか？')) { resetAll(); setMsg('全データをリセットしました。'); } }}>
+          <button className="btn-ghost text-red-600!" onClick={() => { if (confirm('すべての学習データ（成績・生成問題・無効設定）を削除します。元に戻せません。よろしいですか？')) { resetAll(); setMsg('全データをリセットしました。'); } }}>
             全データを削除
           </button>
         </div>

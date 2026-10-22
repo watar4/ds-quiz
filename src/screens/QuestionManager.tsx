@@ -52,11 +52,11 @@ export default function QuestionManager() {
           />
         </div>
         <div className="flex flex-wrap gap-2">
-          <select className="input max-w-[12rem]" value={cat} onChange={(e) => setCat(e.target.value as Category | '')}>
+          <select className="input max-w-48" value={cat} onChange={(e) => setCat(e.target.value as Category | '')}>
             <option value="">全カテゴリ</option>
             {CATEGORIES.map((c) => <option key={c} value={c}>{c}</option>)}
           </select>
-          <select className="input max-w-[10rem]" value={origin} onChange={(e) => setOrigin(e.target.value as QuestionOrigin | '')}>
+          <select className="input max-w-40" value={origin} onChange={(e) => setOrigin(e.target.value as QuestionOrigin | '')}>
             <option value="">全種別</option>
             <option value="builtin">同梱</option>
             <option value="ai-generated">AI生成</option>
@@ -69,7 +69,7 @@ export default function QuestionManager() {
         {filtered.map((q) => {
           const disabled = q.enabled === false;
           return (
-            <li key={q.id} className={`card !p-3 ${disabled ? 'opacity-50' : ''}`}>
+            <li key={q.id} className={`card p-3! ${disabled ? 'opacity-50' : ''}`}>
               <div className="mb-1 flex flex-wrap items-center gap-2">
                 <span className="font-mono text-xs text-slate-400">{q.id}</span>
                 <CategoryBadge category={q.category} />
@@ -79,13 +79,13 @@ export default function QuestionManager() {
               </div>
               <div className="text-sm">{q.question}</div>
               <div className="mt-2 flex items-center gap-2">
-                <button onClick={() => setEnabled(q.id, disabled)} className="btn-ghost !px-2 !py-1 text-xs">
+                <button onClick={() => setEnabled(q.id, disabled)} className="btn-ghost px-2! py-1! text-xs">
                   {disabled ? <><Eye size={14} /> 有効化</> : <><EyeOff size={14} /> 無効化</>}
                 </button>
                 {q.origin !== 'builtin' && (
                   <button
                     onClick={() => { if (confirm('この問題を削除しますか？')) removeQuestion(q.id); }}
-                    className="btn-ghost !px-2 !py-1 text-xs !text-red-600"
+                    className="btn-ghost px-2! py-1! text-xs text-red-600!"
                   >
                     <Trash2 size={14} /> 削除
                   </button>

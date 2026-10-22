@@ -41,7 +41,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
   return (
     <div className="min-h-full">
-      <header className="sticky top-0 z-20 border-b border-slate-200 bg-white/90 backdrop-blur dark:border-slate-800 dark:bg-slate-950/90">
+      <header className="sticky top-0 z-20 border-b border-slate-200 bg-white/90 backdrop-blur-sm dark:border-slate-800 dark:bg-slate-950/90">
         <div className="mx-auto flex max-w-3xl items-center gap-3 px-4 py-3">
           <NavLink to="/" className="flex items-center gap-2 font-bold text-brand-700 dark:text-brand-300">
             <GraduationCap size={22} />
@@ -49,7 +49,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           </NavLink>
           <button
             onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-            className="btn-ghost ml-auto !px-2 !py-1"
+            className="btn-ghost ml-auto px-2! py-1!"
             aria-label={theme === 'dark' ? 'ライトモードに切替' : 'ダークモードに切替'}
           >
             {theme === 'dark' ? <Sun size={18} /> : <Moon size={18} />}
