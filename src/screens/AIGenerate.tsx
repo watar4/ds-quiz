@@ -118,7 +118,7 @@ export default function AIGenerate() {
           <div className="flex items-center justify-between">
             <h2 className="font-semibold">プレビュー（{preview.length}問）</h2>
             <div className="flex gap-2">
-              <button onClick={() => setPreview([])} className="btn-ghost !text-red-600"><Trash2 size={16} /> 破棄</button>
+              <button onClick={() => setPreview([])} className="btn-ghost text-red-600!"><Trash2 size={16} /> 破棄</button>
               <button onClick={handleAdopt} className="btn-primary"><Check size={16} /> 採用する</button>
             </div>
           </div>

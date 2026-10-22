@@ -64,7 +64,7 @@ export default function Review() {
           {items.map((q) => {
             const s = stats[q.id];
             return (
-              <li key={q.id} className="card flex items-start gap-3 !p-3">
+              <li key={q.id} className="card flex items-start gap-3 p-3!">
                 <div className="min-w-0 flex-1">
                   <div className="mb-1 flex flex-wrap items-center gap-2">
                     <CategoryBadge category={q.category} />
